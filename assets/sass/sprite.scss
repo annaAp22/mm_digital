@@ -1,0 +1,92 @@
+/*
+<i class="sprite1 sprite1-arrow_down-1"></i>
+<i class="sprite1 sprite1-arrow_right-1"></i>
+<i class="sprite1 sprite1-arrow_right_big"></i>
+<i class="sprite1 sprite1-circle-section-1"></i>
+<i class="sprite1 sprite1-download-presentation"></i>
+<i class="sprite1 sprite1-email-1"></i>
+<i class="sprite1 sprite1-logo-black"></i>
+<i class="sprite1 sprite1-phone-1"></i>
+<i class="sprite1 sprite1-red_slashes"></i>
+<i class="sprite1 sprite1-rule-1"></i>
+<i class="sprite1 sprite1-sand_clock"></i>
+<i class="sprite1 sprite1-zoom-1"></i>
+*/
+.sprite1 {
+  background-image: url(../images/spritesheet-min.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sprite1-arrow_down-1 {
+  width: 15px;
+  height: 11px;
+  background-position: -5px -5px;
+}
+
+.sprite1-arrow_right-1 {
+  width: 35px;
+  height: 32px;
+  background-position: -30px -5px;
+}
+
+.sprite1-arrow_right_big {
+  width: 106px;
+  height: 97px;
+  background-position: -75px -5px;
+}
+
+.sprite1-circle-section-1 {
+  width: 77px;
+  height: 77px;
+  background-position: -191px -5px;
+}
+
+.sprite1-download-presentation {
+  width: 23px;
+  height: 33px;
+  background-position: -278px -5px;
+}
+
+.sprite1-email-1 {
+  width: 19px;
+  height: 14px;
+  background-position: -5px -48px;
+}
+
+.sprite1-logo-black {
+  width: 307px;
+  height: 147px;
+  background-position: -5px -112px;
+}
+
+.sprite1-phone-1 {
+  width: 14px;
+  height: 20px;
+  background-position: -34px -48px;
+}
+
+.sprite1-red_slashes {
+  width: 54px;
+  height: 31px;
+  background-position: -311px -5px;
+}
+
+.sprite1-rule-1 {
+  width: 83px;
+  height: 83px;
+  background-position: -375px -5px;
+}
+
+.sprite1-sand_clock {
+  width: 21px;
+  height: 27px;
+  background-position: -322px -98px;
+}
+
+.sprite1-zoom-1 {
+  width: 18px;
+  height: 18px;
+  background-position: -353px -98px;
+}

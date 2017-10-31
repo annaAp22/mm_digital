@@ -1,0 +1,447 @@
+@media(max-width: 1260px) {
+	.container {
+		width: 940px;
+		overflow: hidden;
+	}
+	.section-1 {
+	    height: auto;
+	    background-repeat: no-repeat;
+	}
+	.section-1 .col-right {
+	    width: 60%;
+	}
+	.section-1 .task ul {
+	    padding: 15px 0px 15px 135px;
+	}
+	.section-2 > div > div {
+	    float: none;
+	    margin: 0px auto;
+	    width: 100%;
+	    text-align: center;
+	}
+	.section-3 {
+		height: 1415px;
+		background-size: contain;
+	}
+	.section-3 .result-items {
+	    width: 49.7%;
+        margin-top: 35px;
+	}
+	.section-3 .result-items:last-child {
+	    margin: 0px;
+	    display: inline-table;
+	}
+	.section-3 h3 {
+	    margin: 0px 0px 35px 0px;
+	}
+	.section-3 h2 {
+	    margin: 50px auto 43px auto;
+	}
+	.section-4 button {
+	    float: none;
+	    margin: 0 auto;
+	    display: block;
+	}
+	.section-4 input {
+	    margin-bottom: 20px;
+	}
+	.section-5 .container >div img {
+	    width: 100%;
+	}
+	.section-6 {
+	    height: auto;
+	    padding-bottom: 25px;
+	    background-position-x: -170px;
+	    position: relative;
+	}
+	.section-6 > .container{
+		z-index: 111;
+	}
+	.opacity {
+	    background-color: rgba(179, 179, 179, 0.6);
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    top: 0px;
+	}
+	.section-7 .container > div:nth-child(odd) > .col-left{
+	    width: 60%;
+	}
+	.section-7 .container > div:nth-child(odd) > .col-right{	
+	    width: 40%;
+	}
+	.section-7 .container > div:nth-child(even) > .col-left{
+	    width: 40%;
+	}
+	.section-7 .container > div:nth-child(even) > .col-right{	
+	    width: 60%;
+	}
+	.section-8 .element-1 {
+	    height: 290px;
+	}
+	.section-8 .element-1 > .col-left {
+	    width: 40%;
+	    height: 290px;
+	}
+	.section-8 .element-1 > .col-right {
+	    width: 60%;
+	}
+	.element-1-content {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+	.element-1 div:nth-child(1) > div {
+	    width: 100px;
+	    height: 100px;
+	}
+	.circle-1 {
+	    margin-top: -167px;
+	    margin-left: 133px;
+	}
+	.circle-2 {
+	    margin-top: -120px;
+	    margin-left: 240px;
+	}
+	.section-8 .element-2 {
+	    background-image: url(../images/sec-8-2-3.jpg);
+	    background-position-x: 40%;
+	}
+	.element-2-content {
+	    float: right;
+	    margin-right: 4%;
+	    right: 0px;
+	}
+	.element-4 img {
+	    width: 325px;
+        padding-left: 5%;
+    	padding-right: 5%;
+	}
+	.element-4 > p {
+	    padding-left: 65px;
+	}	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 980px) {
+	.container {
+		width: 750px;
+		overflow: hidden;
+	}
+	.section-1 .pren-project {
+	    font-size: 32px; 
+	}
+	.section-3 .result-items > img {
+	    width: 265px;
+	    height: 106px;
+	}
+	.section-3 .result-items {
+	    padding: 0px 20px;
+	}
+	.section-3 {
+	    height: 1380px;
+	}
+	.section-4 input {
+	    width: 47%;
+	}
+	.client-earn {
+	    padding-left: 0px;
+	    padding-right: 50px;
+	}
+	.section-7 .container > div:nth-child(odd) > .col-left{
+	    width: 100%;
+	}
+	.section-7 .container > div:nth-child(odd) > .col-right{	
+	    width: 100%;
+	}
+	.section-7 .container > div:nth-child(even) > .col-left{
+	    width: 100%;
+	}
+	.section-7 .container > div:nth-child(even) > .col-right{	
+	    width: 100%;
+	}
+	.section-8 .element-1 > .col-left {
+	    width: 100%;
+	}
+	.section-8 .element-1 > .col-right {
+	    width: 100%;
+	}
+	.section-8 .element-1 {
+	    height: 570px;
+	}
+	.circle-1 {
+	    margin-left: 280px;
+	}
+	.circle-2 {
+	    margin-left: 400px;
+	}
+	.section-8 .element-2 {
+	    background-image: url(../images/sec-8-2-2.jpg);
+	    height: 451px;
+	}
+	.element-2-content {
+	    float: none;
+	    margin-right: 0px;
+	    right: 0px;
+	    margin: 25px auto;
+	}
+
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px) {
+	.container {
+		width: 90%;
+	}
+	.section-1 .col-right {
+	    width: 80%;
+	}
+	.section-1 .task ul {
+    padding: 15px 0px 15px 45px;
+}
+.section-1 .task {
+    padding: 35px 0 0 0px;
+}
+.section-1 .task>span {
+    left: -70px;
+    font-size: 28px;
+}
+.section-2 .title {
+    font-size: 42px;
+}
+.section-2 .title span {
+
+    font-size: 24px;
+}
+.btn-main {
+    font-size: calc(100% + 13px);
+    width: 80%;
+    height: 65px;
+}
+.section-3 {
+    height: auto;
+    background-size: 150%;
+}
+.section-3 .result-items {
+    width: 100%;
+}
+.section-3 .container >img {
+    padding-bottom: 55%;
+}
+.section-3 h2 {
+    width: 100%;
+}
+.section-3 .result-items:last-child {
+    margin: 30px 0px 0px 0px;
+}
+.section-4 p {
+    width: 100%;
+}
+.section-4 input {
+    width: 100%;
+}
+.section-5 .col-left {
+    width: 100%;
+    margin-left: 0px;
+}
+.section-5 .col-right {
+    width: 100%;
+    margin-right: 0px;
+}
+.download_fr {
+    max-width: 80%;
+}
+.client-earn {
+    padding-right: 0px;
+    width: 100%;
+}
+.section-7 .container > h2 {
+    width: 100%;
+}
+.section-7 .container div .btn-main {
+    font-size: 100%;
+    line-height: 1.5;
+    padding: 10px 20px;
+    height: auto;
+}
+.element-1-content h2 {
+    font-size: 30px;
+}
+.circle-1 {
+    margin-left: 150px;
+}
+.circle-2 {
+    margin-left: 265px;
+}
+.element-4 > p {
+    padding-left: 10%;
+}
+.element-4 img {
+    width: 100px;
+    padding-left: 1%;
+    padding-right: 1%
+}
+.section-7 .container div ul li i img {
+    margin: 0px auto;
+    display: block;
+}
+.section-7 .container div ul li i {
+    position: relative;
+}
+.section-7 .container div ul {
+    padding: 0px 25px;
+}
+.section-7 .container div ul li {
+    padding-left: 0px;
+    text-align: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 480px) {
+	body{
+	font-size: 16px;
+	}	
+	h2 {
+	    font-size: 24px !important;
+	}
+	p {
+		font-size: 120% !important;
+	}
+	.container {
+		width: 100%;
+	}
+	.section-1 .col-right {
+    width: 100%;
+    padding: 0px 20px;
+}
+.section-1 .task ul li p {
+	font-size: 14px !important;
+}
+.section-1 .task>span {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+.download_fr .table-cell:nth-child(2) {
+    padding: 0 50px 0 10px;
+}
+.section-6 .client-earn > p {
+    text-align: center;
+}
+.section-6 .client-earn > h2 {
+    text-align: center;
+}
+.section-6 ul {
+    padding: 0px 20px;
+}
+.section-6 .client-earn > a {
+    margin: 0px auto;
+}
+.section-7 .container div > h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.section-7 .container div > p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.section-8 .element-1 > .col-left {
+    height: 230px;
+}
+.circle-1 {
+    margin-top: -105px;
+    margin-left: 10px;
+}
+.circle-2 {
+    margin-top: -105px;
+    margin-left: 160px;
+}
+.section-8 .element-2 {
+    height: 520px;
+}
+.btn-main {
+    font-size: calc(100% + 5px);
+    width: 80%;
+    height: 65px;
+}
+
+	
+
+}
+
+@media(max-width: 375px) {
+
+.section-2 .title {
+    font-size: 32px;
+}
+.section-2 .title span {
+    font-size: 22px;
+}
+.section-3 h3 {
+    font-size: 22px;
+}
+.section-4 p {
+    padding: 0px 10px;
+}
+.section-4 button {
+    width: 100%;
+}
+.section-5 h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.download_fr .table-cell:nth-child(2) {
+    font-size: 14px;
+}
+.section-8 .element-1 > .col-left {
+    height: 165px;
+}
+.element-2-content {
+    width: 100%;
+    padding: 0px 10px;
+}
+.btn-primary {
+    width: 95%;
+}
+.element-2-content p {
+    margin-bottom: 42px;
+}
+.element-4 > p {
+    padding-left: 0px;
+}
+.opacity {
+    background-color: rgba(245, 245, 245, 0.88);
+}
+
+}
+

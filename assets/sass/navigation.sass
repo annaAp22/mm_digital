@@ -1,0 +1,89 @@
+#nav
+  position: fixed
+  max-width: 70%
+  width: 385px
+  height: 100%
+  background: url("../images/aside_bg-min.png") no-repeat center bottom $color-white-1
+  z-index: 11
+  padding: 41px
+  font-size: 30px
+  .close-btn
+    position: absolute
+    top: 0
+    right: 0
+    display: block
+    text-decoration: none
+    color: #ffffff
+    width: 41px
+    height: 41px
+    line-height: 41px
+    text-align: center
+    background-color: $color-blue-3
+    transition: background-color .6s ease-out
+    font-size: 24px
+    &:focus, &:hover
+      background-color: $color-blue-1
+      transition: background-color .6s ease-out
+  .logo
+    margin-bottom: 40px
+    img
+      max-width: 100%
+  .navigation
+    li
+      margin-bottom: 20px
+      &:after
+        content: ""
+        display: block
+        width: 9px
+        height: 2px
+        background-color: $color-white-3
+      &:focus, &:hover
+        &:after
+          background-color: transparent
+      a
+        text-decoration: none
+        color: $color-black-6
+        display: block
+        span
+          padding-bottom: 20px
+          display: inline-block
+          position: relative
+          &:after
+            content: ""
+            display: block
+            width: 80%
+            border-bottom: 5px solid transparent
+            position: absolute
+            left: 0
+            bottom: 0
+            transition: border-bottom .6s ease-out
+        &:focus, &:hover
+          span
+            &:after
+              border-bottom: 5px solid $color-yellow-2
+              transition: border-bottom .6s ease-out
+// Show sidebar navigation depending on browser support
+html
+  &:not(.csstransforms3d)
+    #nav
+      left: -385px
+      &.active
+        box-shadow: 0 0 30px -10px black
+        left: 0
+  &.csstransforms3d
+    #nav
+      -webkit-transform: translate3d(-385px, 0, 0)
+      -moz-transform: translate3d(-385px, 0, 0)
+      -ms-transform: translate3d(-385px, 0, 0)
+      -o-transform: translate3d(-385px, 0, 0)
+      transform: translate3d(-385px, 0, 0)
+      &.active
+        box-shadow: 0 0 30px -10px black
+        -webkit-transform: translate3d(0, 0, 0)
+        -moz-transform: translate3d(0, 0, 0)
+        -ms-transform: translate3d(0, 0, 0)
+        -o-transform: translate3d(0, 0, 0)
+        transform: translate3d(0, 0, 0)
+        transition: transform .6s ease-out
+      &.ready
+        transition: transform .6s ease-out

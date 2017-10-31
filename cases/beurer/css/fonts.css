@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'core_sans_ds';
+    src: url('../fonts/core_sans_ds_35_regular.eot');
+    src: url('../fonts/core_sans_ds_35_regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/core_sans_ds_35_regular.woff2') format('woff2'),
+    url('../fonts/core_sans_ds_35_regular.woff') format('woff'),
+    url('../fonts/core_sans_ds_35_regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'core_sans_ds';
+    src: url('../fonts/core_sans_ds_45_medium.eot');
+    src: url('../fonts/core_sans_ds_45_medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/core_sans_ds_45_medium.woff2') format('woff2'),
+    url('../fonts/core_sans_ds_45_medium.woff') format('woff'),
+    url('../fonts/core_sans_ds_45_medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'core_sans_ds';
+    src: url('../fonts/core_sans_ds_55_bold.eot');
+    src: url('../fonts/core_sans_ds_55_bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/core_sans_ds_55_bold.woff2') format('woff2'),
+    url('../fonts/core_sans_ds_55_bold.woff') format('woff'),
+    url('../fonts/core_sans_ds_55_bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'core_sans_ds';
+    src: url('../fonts/core_sans_ds_75_black.eot');
+    src: url('../fonts/core_sans_ds_75_black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/core_sans_ds_75_black.woff2') format('woff2'),
+    url('../fonts/core_sans_ds_75_black.woff') format('woff'),
+    url('../fonts/core_sans_ds_75_black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+
+}

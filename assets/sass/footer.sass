@@ -1,0 +1,205 @@
+// contacts
+.block-contacts
+  height: 823px
+  height: 100vh
+  .column
+    width: 50%
+    height: 100vh
+    &.contacts
+      @include rem-fallback('min-height',56)
+      @include font-size(1.6)
+      position: relative
+      background: url("../images/contacts-min.jpg") no-repeat center
+      background-size: cover
+      color: #ffffff
+      //padding: grid-width(2) 0 grid-width(3) grid-width(7)
+      text-align: center
+      &:before
+        content: ""
+        display: inline-block
+        vertical-align: middle
+        height: 100%
+      .contacts-wrap
+        @include rem-fallback('width',44)
+        text-align: left
+        position: relative
+        &:after
+          content: ""
+          display: block
+          position: absolute
+          @include rem-fallback('top',5)
+          left: per-calc(440,-110)
+          width: per-calc(440,80)
+          @include rem-fallback('height',.7)
+          background-color: $color-yellow-2
+      .header
+        @include rem-fallback('margin-bottom',1)
+        @include font-size(7.2)
+      .city
+        @include font-size(2.4)
+      .street
+        @include font-size(1.8)
+      .phone
+        @include rem-fallback('margin',2,0)
+        @include font-size(4.8)
+      .email
+        @include rem-fallback('margin-bottom',2)
+        @include font-size(1.8)
+        i
+          @include rem-fallback('margin-right',1)
+      .button-wrapper
+        @include rem-fallback('margin-bottom',2)
+        button
+          @include font-size(2)
+      .fz-14
+        @include font-size(1.4)
+    &:last-child
+      #map
+        width: 100%
+        height: 100%
+// 1100px
+@media (max-width: 1100px)
+  .block-contacts
+    height: 200vh
+    .column
+      width: 100%
+
+// 890px
+@media (max-width: 890px)
+  .block-contacts
+    .column
+      &.contacts
+        $m: 1.2
+        .contacts-wrap
+          @include rem-fallback('width',44*$m)
+        .header
+          @include rem-fallback('margin-bottom',1*$m)
+          @include font-size(7.2*$m)
+        .city
+          @include font-size(2.4*$m)
+        .street
+          @include font-size(1.8*$m)
+        .phone
+          @include rem-fallback('margin',2*$m,0)
+          @include font-size(4.8*$m)
+        .email
+          @include rem-fallback('margin-bottom',2*$m)
+          @include font-size(1.8*$m)
+          i
+            @include rem-fallback('margin-right',1*$m)
+        .button-wrapper
+          @include rem-fallback('margin-bottom',2*$m)
+          button
+            @include font-size(2*$m)
+            @include rem-fallback('height',4.4*$m)
+        .fz-14
+          @include font-size(1.4*$m)
+
+// 690px
+@media (max-width: 690px)
+  .block-contacts
+    .column
+      &.contacts
+        $m: 1.8
+        //.contacts-wrap
+        //  @include rem-fallback('width',44*$m)
+        //.header
+        //  @include rem-fallback('margin-bottom',1*$m)
+        //  @include font-size(7.2*$m)
+        //.city
+        //  @include font-size(2.4*$m)
+        //.street
+        //  @include font-size(1.8*$m)
+        //.phone
+        //  @include rem-fallback('margin',2*$m,0)
+        //  @include font-size(4.8*$m)
+        //.email
+        //  @include rem-fallback('margin-bottom',2*$m)
+        //  @include font-size(1.8*$m)
+        //  i
+        //    @include rem-fallback('margin-right',1*$m)
+        .button-wrapper
+          @include rem-fallback('margin-bottom',2*$m)
+          button
+            @include font-size(2*$m)
+            @include rem-fallback('height',4.4*$m)
+            @include border-radius(30px)
+            @include border-radius(3rem*$m)
+        .fz-14
+          @include font-size(1.4*$m)
+
+
+
+
+
+
+//
+//// 700px
+//@media (max-width: 700px)
+//  .block-contacts
+//    .column
+//      &.contacts
+//        .contacts-wrap
+//          width: 300px
+//          .phone
+//            font-size: 24px
+//
+
+// 450px
+@media (max-width: 450px)
+  .block-contacts
+    .column
+      &.contacts
+        $m: 1
+        .contacts-wrap
+          @include rem-fallback('width',44*$m)
+        //.header
+        //  @include rem-fallback('margin-bottom',1*$m)
+        //  @include font-size(7.2*$m)
+        //.city
+        //  @include font-size(2.4*$m)
+        //.street
+        //  @include font-size(1.8*$m)
+        .phone
+          @include rem-fallback('margin',2*$m,0)
+          @include font-size(4.8*$m)
+        //.email
+        //  @include rem-fallback('margin-bottom',2*$m)
+        //  @include font-size(1.8*$m)
+        //  i
+        //    @include rem-fallback('margin-right',1*$m)
+        .button-wrapper
+          //@include rem-fallback('margin-bottom',2*$m)
+          button
+            @include font-size(3*$m)
+            //@include rem-fallback('height',4.4*$m)
+            //@include border-radius(30px)
+            //@include border-radius(3rem*$m)
+        //.fz-14
+        //  @include font-size(2*$m)
+
+//// 480px 768px
+//@media (max-height: mq-rem(48)) and (max-width: mq-rem(76.8)) and (orientation: landscape)
+//  .block-contacts
+//    .column
+//      &.contacts
+//        min-height: 0
+//        .contacts-wrap
+//          .header
+//            font-size: 34px
+//            margin: 0
+//          .city
+//            font-size: 18px
+//          .street
+//            font-size: 16px
+//            line-height: 1
+//          .phone
+//            line-height: 1
+//            margin: 10px 0
+//          .email
+//            margin: 10px 0
+//          .button-wrapper
+//            .btn
+//              margin: 0
+//              height: 40px
+//              font-size: 16px

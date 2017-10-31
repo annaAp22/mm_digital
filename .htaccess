@@ -1,0 +1,35 @@
+adddefaultcharset utf-8
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^.htaccess$ - [F]
+
+RewriteCond %{HTTP_HOST} ^www.mm.digital [NC]
+RewriteRule ^(.*)$ http://mm.digital/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www.mm-media.ru [NC]
+RewriteRule ^(.*)$ http://mm.digital/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^mm-media.ru [NC]
+RewriteRule ^(.*)$ http://mm.digital/$1 [L,R=301]
+
+</IfModule>
+
+<ifModule mod_headers.c>
+	<filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf)$">
+		Header set Cache-Control "max-age=2592000, public"
+	</filesMatch>
+	<filesMatch "\.(css|js)$">
+		Header set Cache-Control "max-age=2592000, public"
+	</filesMatch>
+	<filesMatch "\.(xml|txt)$">
+		Header set Cache-Control "max-age=172800, public, must-revalidate"
+	</filesMatch>
+	<filesMatch "\.(html|htm|php)$">
+		Header set Cache-Control "max-age=172800, private, must-revalidate"
+	</filesMatch>
+</ifModule>

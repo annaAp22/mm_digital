@@ -1,0 +1,525 @@
+@import "app"
+html, body
+  line-height: 1.5
+  @include font()
+  min-width: 320px
+
+$font-sizes: 14 16 18 20 22 24 30 36 48 50 72 303 // font sizes list
+@each $size in $font-sizes
+  .fz-#{$size}
+    font-size: $size + px
+
+// Sprite
+@import "sprite"
+
+// Keyframes
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+@keyframes scaleUp
+  0%
+    transform: scale(0,0)
+  100%
+    transform: scale(1,1)
+@keyframes menuButtonHover
+  0%
+    width: 61px
+  50%
+    width: 90px
+  100%
+    width: 61px
+@keyframes slideFromLeft1
+  0%
+    transform: translate3d(-100px,0, 0)
+  100%
+    transform: translate3d(0, 0, 0)
+@keyframes slideFromRight1
+  0%
+    transform: translate3d(500px,0, 0)
+  100%
+    transform: translate3d(0, 0, 0)
+@keyframes captionShow
+  0%
+    transform: rotateX(90deg)
+    opacity: 0
+  100%
+    transform: rotateX(0deg)
+    opacity: 1
+@keyframes shadowFlicker
+  0%
+    box-shadow: 0 0 0 0 transparent
+  50%
+    box-shadow: 0 0 51px 10px #ffbf24
+  100%
+    box-shadow: 0 0 0 0 transparent
+    opacity: 1
+
+// Buttons
+.btn
+  border: none
+  outline: none
+  cursor: pointer
+.btn-1
+  font-size: 20px
+  color: rgb(255, 255, 255)
+  line-height: 1.2
+  text-align: center
+  padding: 0 40px
+  height: 64px
+  background-color: $color-yellow-2
+  @include border-radius(32px)
+  margin-top: 20px
+  &:hover
+    animation: shadowFlicker 1.2s ease-out infinite
+    animation-fill-mode: forwards
+
+
+// Columns
+@function grid-width($numberOfColumns)
+  @return per-calc(1920, (1920/40) * $numberOfColumns)
+
+@for $i from 1 through 40
+  .col-#{$i}
+    width: grid-width($i)
+
+
+// Blocks
+.block
+  padding: grid-width(1)
+.menu-sidebar
+  position: fixed !important
+  left: grid-width(1)
+  top: grid-width(1)
+  background: rgba(255,255,255,0) // ie9 click fix
+  z-index: 10
+  width: 90px
+  margin-left: per-calc(1920,-30)
+  cursor: pointer
+  //transform: translate3d(-100px,0,0)
+  //animation: slideFromLeft1 .6s ease-out 1s
+  //animation-fill-mode: forwards
+  & > div
+    background-color: $color-white-1
+    width: 61px
+    height: 7px
+    margin: 0 auto 14px
+    @include border-radius(7px)
+
+  &:hover
+    & > div
+      &:first-child
+        animation: .5s menuButtonHover ease-out .3s
+      &:nth-child(2)
+        animation: .5s menuButtonHover ease-out
+      &:last-child
+        animation: .5s menuButtonHover ease-out .2s
+// video
+.block-1
+  position: relative
+  width: 100%
+  height: 980px
+  height: 100vh
+  min-height: 820px
+  overflow: hidden
+  video
+    position: absolute
+    top: 50%
+    left: 50%
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+    z-index: -100
+    transform: translateX(-50%) translateY(-50%)
+    background-size: cover
+    transition: opacity .6s ease-out
+    opacity: 1
+    animation: .6s fadeIn 1 ease-out
+    &.active
+      opacity: 0
+      transition: opacity .6s ease-out
+  .logo
+    //transform: scale(0,0)
+    max-width: 100%
+  //animation: .6s scaleUp 1 ease-out .6s
+  //animation-fill-mode: forwards
+  .contacts
+    color: #ffffff
+    //transform: translate3d(1000px,0,0)
+    //animation: slideFromRight1 .6s ease-out 1s
+    //animation-fill-mode: forwards
+    line-height: 1
+    font-size: 24px
+    position: absolute
+    top: grid-width(1)
+    right: grid-width(1)
+    i
+      margin-right: 10px
+  .caption
+    color: #ffffff
+    height: 100%
+    padding-top: 100px
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    & > div
+      width: 90%
+    &:before
+      content: ""
+      height: calc(100% + 80px)
+      display: inline-block
+      vertical-align: middle
+    .logo
+      display: none
+    p
+      text-shadow: 1px 1px 2px black
+      &:nth-child(2)
+        max-width: 866px
+        font-size: 25px
+        transition: font-size .6s ease-out
+        line-height: 1.1
+        //transform: rotateX(90deg)
+        //opacity: 0
+        //animation: captionShow .6s ease-out 1.5s
+        //animation-fill-mode: forwards
+        margin-top: 20px
+      &:nth-child(4)
+        max-width: 580px
+        line-height: 1.1
+        margin-top: 20px
+        width: 80%
+        //opacity: 0
+        //animation: fadeIn .6s ease-out 2s
+        //animation-fill-mode: forwards
+        font-size: 24px
+    .button-wrapper
+    //opacity: 0
+    //animation: fadeIn .6s ease-out 2s
+    //animation-fill-mode: forwards
+    .next-slide
+      margin-top: 40px
+      cursor: pointer
+      & > div
+        width: 35px
+        height: 35px
+        @include border-radius(50%)
+        background-color: $color-yellow-2
+        margin-right: 15px
+        line-height: 35px
+        padding-top: 12px
+    .case-link
+      color: #ffffff
+      font-size: 24px
+      
+// cases
+.block-2
+  //background: -webkit-linear-gradient(top,rgba(0,160,227,0.5) 0%,rgba(176,203,31,0.5) 50%,rgba(239,127,26,0.5) 100%)
+  //background: -moz-linear-gradient(top,rgba(0,160,227,0.5) 0%,rgba(176,203,31,0.5) 50%,rgba(239,127,26,0.5) 100%)
+  //background: linear-gradient(to bottom,rgba(0,160,227,0.5) 0%,rgba(176,203,31,0.5) 50%,rgba(239,127,26,0.5) 100%)
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00A0E3', endColorstr='#EF7F1A',GradientType=0 )
+  &.bg-1
+    background-color: $color-blue-4
+    transition: background-color 1s ease-out
+  &.bg-2
+    background-color: $color-green-4
+    transition: background-color 1s ease-out
+  &.bg-3
+    background-color: $color-yellow-4
+    transition: background-color 1s ease-out
+  aside
+    margin-right: grid-width(1)
+    height: 100%
+    padding-top: 110px
+    .nav
+      li
+        a
+          color: $color-black-1
+          text-decoration: none
+          display: inline-block
+          border-bottom: 2px solid transparent
+          padding: 20px 20px 20px 0
+          &:hover, &.active
+            border-bottom: 2px solid $color-red-1
+
+
+  .header
+    font-size: 50px
+    text-transform: uppercase
+    margin-bottom: 40px
+    .date
+      margin-left: per-calc(1920,320)
+  .sub-header
+    margin-bottom: 40px
+    span
+      &:nth-child(2)
+        color: $color-red-1
+        margin-left: per-calc(1920,20)
+  .content
+    position: relative
+    // width: 70%
+    width: 100%
+    padding: 0 10%
+    img
+      max-width: 100%
+    .case-wrapper
+      width: 100%
+      position: relative
+      .case
+        position: relative
+        padding-bottom: 100px
+        margin-bottom: 40px
+        width: per-calc(1265.5, 963)
+        & > span
+          position: absolute
+          left: 0
+          bottom: 0
+          color: #ffffff
+          line-height: 200px
+          font-size: 303px
+          font-size: 16vw
+          .white-line
+            width: 84px
+            height: 2px
+            background-color: #ffffff
+            margin: -140px 0 0 -40px
+      // .benefits
+      //   position: absolute
+      //   width: 338px
+      //   top: per-calc(556,60)
+      //   left: per-calc(963,480)
+      //   & > div
+      //     width: 50%
+      //     height: per-calc(963,190)
+      //     padding-bottom: per-calc(963,20)
+      //     color: #ffffff
+      //     padding-right: 10%
+      //     i
+      //       text-align: center
+      //       span
+      //         line-height: 77px
+      //     p
+      //       margin-top: 10px
+      //       line-height: 1.1
+      .description
+        position: absolute
+        top: 0
+        right: 0
+        width: 400px
+        &.right
+          margin-left: per-calc(1265.5, -100)
+        &.left
+          margin-right: per-calc(1265.5, -100)
+        & > div
+          &:first-child
+            color: #ffffff
+          &:last-child
+            color: #000000
+            & > .column
+              &:first-child
+                margin-top: 20px
+                width: 30%
+                height: 2px
+                background-color: #ffffff
+              &:last-child
+                width: 70%
+                padding-left: 5%
+                .detailed
+                  margin-top: 40px
+
+// about us
+.block-3
+  height: 1118px
+  min-height: 560px
+  height: 100vh
+  background: url("../images/mountains-min.jpg") no-repeat center
+  background-size: cover
+// contacts
+.block-4
+  height: 823px
+  height: 100vh
+  .column
+    width: 50%
+    height: 100vh
+    &.contacts
+      min-height: 560px
+      font-size: 16px
+      position: relative
+      background: url("../images/contacts-min.jpg") no-repeat center
+      background-size: cover
+      color: #ffffff
+      //padding: grid-width(2) 0 grid-width(3) grid-width(7)
+      text-align: center
+      &:before
+        content: ""
+        display: inline-block
+        vertical-align: middle
+        height: 100%
+      .contacts-wrap
+        width: 440px
+        text-align: left
+        position: relative
+        &:after
+          content: ""
+          display: block
+          position: absolute
+          top: 50px
+          left: per-calc(440,-110)
+          width: per-calc(440,80)
+          height: 7px
+          background-color: $color-yellow-2
+        .header
+          margin-bottom: grid-width(1)
+        .phone
+          margin: grid-width(2) 0
+        .email
+          margin-bottom: grid-width(2)
+          i
+            margin-right: 10px
+        .button-wrapper
+          margin-bottom: grid-width(2)
+    &:last-child
+      #map
+        width: 100%
+        height: 100%
+// Media queries
+@media (orientation: portrait)
+  .block-1
+    .logo
+      max-width: 50%
+@media (min-width: 360px) and (orientation: portrait)
+  .block-1
+    .contacts
+      font-size: 30px
+      transition: font-size .6s ease-out
+@media (min-width: 375px) and (orientation: portrait)
+  .block-1
+    .caption
+      p
+        &:nth-child(2)
+          font-size: 30px
+          transition: font-size .6s ease-out
+        &:nth-child(4)
+          font-size: 24px
+          max-width: 670px
+@media (min-width: 414px) and (orientation: portrait)
+  .block-1
+    .caption
+      p
+        &:nth-child(2)
+          font-size: 36px
+          transition: font-size .6s ease-out
+@media (min-width: 600px)
+  .block-1
+    .caption
+      p
+        &:nth-child(2)
+          font-size: 40px
+          transition: font-size .6s ease-out
+          text-transform: uppercase
+    .contacts
+      font-size: 30px
+@media (max-width: 1100px)
+  .block-1
+    .logo
+      max-width: 175px
+      transition: max-width .6s ease-out
+      margin-left: 40px
+    .contacts
+      position: static
+  .block-4
+    height: 200vh
+    .column
+      width: 100%
+
+@media (max-width: 700px)
+  .block-4
+    .column
+      &.contacts
+        .contacts-wrap
+          width: 300px
+          .phone
+            font-size: 24px
+
+@media (max-width: 650px)
+  .block-1
+    .contacts
+      font-size: 24px
+    .logo
+      &.logo-l
+        display: none
+      &.logo-m
+        display: inline-block
+        margin-left: 0
+    .caption
+      p
+        &:nth-child(4)
+          font-size: 16px
+      button
+        height: 42px
+      .next-slide
+        margin-top: 20px
+@media (max-height: 480px) and (max-width: 768px) and (orientation: landscape)
+  #nav
+    padding-top: 20px
+    .logo
+      margin-bottom: 0
+      img
+        width: 80px
+    .navigation
+      li
+        margin-bottom: 0
+        a
+          span
+            padding-bottom: 0
+  .block-1
+    min-height: 460px
+    .logo
+      &.logo-l
+        display: inline-block
+        max-width: 20%
+      &.logo-m
+        display: none
+    .contacts
+      font-size: 20px
+      width: 50%
+    .caption
+      padding-top: 60px
+      p
+        &:nth-child(2)
+          font-size: 24px
+        &:nth-child(4)
+          display: none
+      button
+        height: 32px
+  .block-4
+    .column
+      &.contacts
+        min-height: 0
+        .contacts-wrap
+          .header
+            font-size: 34px
+            margin: 0
+          .city
+            font-size: 18px
+          .street
+            font-size: 16px
+            line-height: 1
+          .phone
+            line-height: 1
+            margin: 10px 0
+          .email
+            margin: 10px 0
+          .button-wrapper
+            .btn
+              margin: 0
+              height: 40px
+              font-size: 16px
+
+
+@media (max-width: 375px)
+  .block-1
+    .contacts
+      font-size: 20px

@@ -1,0 +1,68 @@
+@font-face
+  font-family: "Arvo"
+  src: url('../fonts/arvo/ArvoRegular.eot')
+  src: url('../fonts/arvo/ArvoRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/arvo/ArvoRegular.woff') format("woff")
+  font-weight: 400
+  font-style: normal
+@font-face
+  font-family: "Arvo"
+  src: url('../fonts/arvo/ArvoBold.eot')
+  src: url('../fonts/arvo/ArvoBold.eot?#iefix') format('embedded-opentype'), url('../fonts/arvo/ArvoBold.woff') format("woff")
+  font-weight: 700
+  font-style: normal
+
+@font-face 
+  font-family: 'ProximaNova'
+  src: url('../fonts/proxima/proximanova-black.eot')
+  src: url('../fonts/proxima/proximanova-black.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima/proximanova-black.woff2') format('woff2'), url('../fonts/proxima/proximanova-black.woff') format('woff')
+  font-weight: 900
+  font-style: normal
+@font-face
+  font-family: 'ProximaNova'
+  src: url('../fonts/proxima/proximanova-xbold.eot')
+  src: url('../fonts/proxima/proximanova-xbold.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima/proximanova-xbold.woff2') format('woff2'), url('../fonts/proxima/proximanova-xbold.woff') format('woff')
+  font-weight: 800
+  font-style: normal
+@font-face 
+  font-family: 'ProximaNova'
+  src: url('../fonts/proxima/proximanova-bold.eot')
+  src: url('../fonts/proxima/proximanova-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima/proximanova-bold.woff2') format('woff2'), url('../fonts/proxima/proximanova-bold.woff') format('woff')
+  font-weight: 700
+  font-style: normal
+@font-face
+  font-family: 'ProximaNova'
+  src: url('../fonts/proxima/proximanova-reg.eot')
+  src: url('../fonts/proxima/proximanova-reg.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima/proximanova-reg.woff2') format('woff2'), url('../fonts/proxima/proximanova-reg.woff') format('woff')
+  font-weight: 400
+  font-style: normal
+@font-face 
+  font-family: 'ProximaNova'
+  src: url('../fonts/proxima/proximanova-light.eot')
+  src: url('../fonts/proxima/proximanova-light.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima/proximanova-light.woff2') format('woff2'), url('../fonts/proxima/proximanova-light.woff') format('woff')
+  font-weight: 300
+  font-style: normal
+
+
+// Fonts
+$defaultFontSize: 16px
+$proxima: "ProximaNova", sans-serif
+$arvo: "Arvo", serif
+@mixin font($family: $proxima, $weight: 400)
+  font-family: $family
+  font-weight: $weight
+.proxima
+  @include font()
+.proxima-light
+  @include font($weight: 300)
+.proxima-semibold
+  @include font($weight: 500)
+.proxima-bold
+  @include font($weight: 700)
+.proxima-extrabold
+  @include font($weight: 800)
+.proxima-black
+  @include font($weight: 900)
+.arvo
+  @include font($arvo)
+.arvo-bold
+  @include font($arvo, 700)
