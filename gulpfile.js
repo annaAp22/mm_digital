@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
+    // server = require("browser-sync").create(),
     rename = require('gulp-rename');
 gulp.task('styles', function(){
     gulp.src(['assets/sass/index.sass','assets/sass/med_serdce.sass','assets/sass/fit2u.sass'])
@@ -13,11 +14,25 @@ gulp.task('styles', function(){
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
     .pipe(gulp.dest('assets/css'));
+    // .pipe(server.stream());
 });
 
-gulp.task('watch', function() {
+// gulp.task('watch', function() {
+//
+//   // Watch the sass files
+//   gulp.watch('assets/sass/app.sass', ['styles']);
+//
+// });
+// gulp.task("serve", ["styles"], function () {
+//     server.init({
+//         server: ".",
+//         notify: false,
+//         open: true,
+//         cors: true,
+//         ui: false
+//     });
+//
+//     gulp.watch("assets/sass/**/*.{scss,sass}", ["styles"]);
+//
+// });
 
-  // Watch the sass files
-  gulp.watch('assets/sass/app.sass', ['styles']);
-
-});
