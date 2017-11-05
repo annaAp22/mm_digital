@@ -78,6 +78,7 @@
       </div>
     </section>
     <article class="unit unit--00">
+      <h2 class="visualy-hidden">Ребрендинг и новый дизайн магазина фитнес одежды</h2>
       <div class="container">
         <div class="unit__block">&nbsp;
           <img class="unit__img00" src="/assets/images/cases/fit2u/screen.png" alt="laptop">
@@ -105,18 +106,38 @@
     <article class="unit unit--001">
       <div class="container">
         <div class="unit__block">&nbsp;
-          <h2>Создание логотипа и общей стилистики сайта</h2>
-          <p><span>Идея:</span> лого серьезного интернет-магазина одежды. Цифра два огибает букву U, что символизирует
+          <h3 class="proxima-extrabold">Создание логотипа и общей стилистики сайта</h3>
+          <p class="proxima unit__idea"><span class="proxima-bold">Идея:</span> лого серьезного интернет-магазина одежды. Цифра два огибает букву U, что символизирует
             дословно то, что впору клиенту. Как цифра огибает и подстраивается под букву U, так одежда магазина - это
             именно то, что подойдет клиенту</p>
 
+          <img class="unit__img" src="/assets/images/cases/fit2u/logo2.png" alt="логотип">
+
+          <h3 class="proxima-extrabold">Палитра на сайте</h3>
+          <div class="palette">
+            <div class="palette-item palette-item--yellow proxima-semibold">#fcd82f</div>
+            <div class="palette-item palette-item--green proxima-semibold">#35b056</div>
+            <div class="palette-item palette-item--black proxima-semibold">#1e0f00</div>
+            <div class="palette-item palette-item--grey proxima-semibold">#f4f4f4</div>
+            <div class="palette-item palette-item--white proxima-semibold">#ffffff</div>
+
+          </div>
         </div>
         <div class="unit__block">
-
+          <h2 class="proxima-extrabold">Работа над брэндом</h2>
         </div>
       </div>
       <div class="unit__block-full">
-
+        <p class="proxima-semibold"><span class="proxima-bold">Fit2U</span> - это интернет-магазин модной фитнес одежды для
+          женщин и мужчина. Европейский дизайн и качественная ткань.
+        </p>
+        <p class="proxima-semibold">Заказчик очень хотел подчеркнуть яркий и позитивный настрой компании, дружелюбный сервис и, в то же время,
+          серьезность организации. Мы помогли в реализации узнаваемости компании</p>
+        <div class="column button">
+          <button class="btn btn-2 proxima-extrabold ajax-modal" data-type="request">
+            Хочу заказать ребрендинг
+          </button>
+        </div>
       </div>
     </article>
     <!-- Content End -->

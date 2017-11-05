@@ -76,6 +76,17 @@ $xs: "(max-width: 575px)"
   @media screen and #{$md-down}
     max-width: 100%
     padding: 0 2.5%
+
+.visualy-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  padding: 0
+  border: 0
+  clip: rect(0 0 0 0)
+  overflow: hidden
+
 .main-page
   width: 100%
   min-width: 320px
@@ -99,6 +110,7 @@ $xs: "(max-width: 575px)"
 .unit__block
   position: relative
   width: 50%
+
 //
 //background: linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%),
 //background: url('../images/cases/fit2u/bg00.jpg') no-repeat right bottom ,linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%)
@@ -186,6 +198,56 @@ $xs: "(max-width: 575px)"
   min-height: 720px
   background: url('../images/cases/fit2u/bg001.png') no-repeat
   background-size: 100% 100%
+
+  .unit__block
+    padding-right: 2.5%
+  h3
+   margin-top: 65px
+   font-size: 24px
+    color: #000
+  .unit__idea
+    margin-top: 55px
+    margin-bottom: 42px
+    font-size: 14px
+    color: #272727
+    span
+      font-size: 18px
+      color: #e93f3f
+
+  .palette
+    display: flex
+    flex-wrap: wrap
+    flex-grow: 1
+    align-items: flex-start
+    margin-top: 42px
+    margin-bottom: 100px
+    font-size: 14px
+    color: #000
+
+  .palette-item
+    display: flex
+    height: 85px
+    width: 85px
+    align-items: center
+    justify-content: center
+    box-shadow: 0px 28px 35px 0px rgba(55, 55, 55, 0.24)
+    &:not(:last-child)
+      margin-right: 26px
+    &--yellow
+      background-color: #fcd82f
+    &--green
+      background-color: #35b056
+      color: #fff
+    &--black
+      background-color: #1e0f00
+      color: #fff
+    &--grey
+      background-color: #f4f4f4
+    &--white
+      background-color: #ffffff
+
+
+
 
 
 
