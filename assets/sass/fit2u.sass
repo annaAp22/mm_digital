@@ -65,6 +65,7 @@ $xs: "(max-width: 575px)"
   display: flex
   flex-grow: 1
   flex-wrap: wrap
+  align-items: flex-start
   margin:
     left: auto
     right: auto
@@ -78,29 +79,124 @@ $xs: "(max-width: 575px)"
 .main-page
   width: 100%
   min-width: 320px
+.trigon
+  position: absolute
+  top: 0
+  left: 0
+  display: block
+  color: #d898aa
+  //border: 14px solid transparent
+  //border-bottom: 23px solid #d898aa
+  &--90
+    transform: rotate(90deg)
+  &--45
+    transform: rotate(45deg)
+  &--m45
+    transform: rotate(-45deg)
 .unit
   width: 100%
-  &--00
-    background: url('../images/cases/fit2u/bg00.jpg') no-repeat right bottom #cc40ee
-    background-size: auto 100%
-    //background: linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%),
-  //background: url('../images/cases/fit2u/bg00.jpg') no-repeat right bottom ,linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%)
-
-    //url('../images/cases/fit2u/bg00.jpg') no-repeat
-    //background-image: linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%)
-    //background-repeat: no-repeat
-    //background-position:
-
-  &--001
-    min-height: 720px
-    background: url('../images/cases/fit2u/bg001.png') no-repeat
-    background-size: 100% 100%
-
 
 .unit__block
-  margin-top: 20px
-  margin-bottom: 20px
+  position: relative
   width: 50%
-  min-height: 40px
-  ///
+//
+//background: linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%),
+//background: url('../images/cases/fit2u/bg00.jpg') no-repeat right bottom ,linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%)
+//background-size: auto 100%
+//url('../images/cases/fit2u/bg00.jpg') no-repeat
+//background-image: linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%)
+//background-repeat: no-repeat
+//background-position:
+.unit--00
+  background: url('../images/cases/fit2u/bg00.jpg') no-repeat right bottom #cc40ee
+  background-size: auto 100%
+
+  .unit__img00
+    position: absolute
+    display: block
+    top: 0
+    right: 7%
+
+  .unit__link
+    display: inline-block
+    margin-top: 44px
+    font-size: 30px
+    color: #fff
+    text-decoration: none
+    & span
+      border-bottom: 1px solid #fff
+
+    & .sprite_ms-link_1
+      margin-right: 15px
+
+  .unit__descr
+    margin-bottom: 40px
+    font-size: 22px
+    color: #fff
+
+  .unit__attainment
+    position: relative
+    font-size: 42px
+    color: #fff
+    margin-bottom: 60px
+
+    &:after
+      content: ""
+      position: absolute
+      top: 20px
+      left: -160px
+      width: 110px
+      height: 6px
+      background: #fff
+  .unit__task
+    position: relative
+    &-corner
+      width: 25px
+      height: 25px
+      border-top: 6px solid #fff
+      border-left: 6px solid #fff
+      margin-bottom: 55px
+    & span
+      position: relative
+      display: block
+      margin-bottom: 160px
+      font-size: 36px
+      z-index: 1
+
+    &-lst
+      position: absolute
+      top: 31px
+      right: 0
+      width: 90.25%
+      margin: 0
+      padding-top: 50px
+      padding-bottom: 50px
+      padding-left: 96px
+      padding-right: 2.5%
+      background-color: #fff
+      color: #131313
+      font-size: 18px
+      border-right: 6px solid #fcd82f
+      box-shadow: 0px 0px 122px 0px rgba(0, 1, 2, 0.13)
+    li
+      position: relative
+      padding-left: 42px
+      margin: 0 0 22px 0
+.unit--001
+  min-height: 720px
+  background: url('../images/cases/fit2u/bg001.png') no-repeat
+  background-size: 100% 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
 

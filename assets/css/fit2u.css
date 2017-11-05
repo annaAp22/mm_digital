@@ -5,6 +5,8 @@
   flex-grow: 1;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin-left: auto;
   margin-right: auto; }
   @media screen and (min-width: 1318px) {
@@ -22,18 +24,96 @@
   width: 100%;
   min-width: 320px; }
 
+.trigon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  color: #d898aa; }
+  .trigon--90 {
+    transform: rotate(90deg); }
+  .trigon--45 {
+    transform: rotate(45deg); }
+  .trigon--m45 {
+    transform: rotate(-45deg); }
+
 .unit {
   width: 100%; }
-  .unit--00 {
-    background: url("../images/cases/fit2u/bg00.jpg") no-repeat right bottom #cc40ee;
-    background-size: auto 100%; }
-  .unit--001 {
-    min-height: 720px;
-    background: url("../images/cases/fit2u/bg001.png") no-repeat;
-    background-size: 100% 100%; }
 
 .unit__block {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 50%;
-  min-height: 40px; }
+  position: relative;
+  width: 50%; }
+
+.unit--00 {
+  background: url("../images/cases/fit2u/bg00.jpg") no-repeat right bottom #cc40ee;
+  background-size: auto 100%; }
+  .unit--00 .unit__img00 {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 7%; }
+  .unit--00 .unit__link {
+    display: inline-block;
+    margin-top: 44px;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none; }
+    .unit--00 .unit__link span {
+      border-bottom: 1px solid #fff; }
+    .unit--00 .unit__link .sprite_ms-link_1 {
+      margin-right: 15px; }
+  .unit--00 .unit__descr {
+    margin-bottom: 40px;
+    font-size: 22px;
+    color: #fff; }
+  .unit--00 .unit__attainment {
+    position: relative;
+    font-size: 42px;
+    color: #fff;
+    margin-bottom: 60px; }
+    .unit--00 .unit__attainment:after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: -160px;
+      width: 110px;
+      height: 6px;
+      background: #fff; }
+  .unit--00 .unit__task {
+    position: relative; }
+    .unit--00 .unit__task-corner {
+      width: 25px;
+      height: 25px;
+      border-top: 6px solid #fff;
+      border-left: 6px solid #fff;
+      margin-bottom: 55px; }
+    .unit--00 .unit__task span {
+      position: relative;
+      display: block;
+      margin-bottom: 160px;
+      font-size: 36px;
+      z-index: 1; }
+    .unit--00 .unit__task-lst {
+      position: absolute;
+      top: 31px;
+      right: 0;
+      width: 90.25%;
+      margin: 0;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 96px;
+      padding-right: 2.5%;
+      background-color: #fff;
+      color: #131313;
+      font-size: 18px;
+      border-right: 6px solid #fcd82f;
+      box-shadow: 0px 0px 122px 0px rgba(0, 1, 2, 0.13); }
+    .unit--00 .unit__task li {
+      position: relative;
+      padding-left: 42px;
+      margin: 0 0 22px 0; }
+
+.unit--001 {
+  min-height: 720px;
+  background: url("../images/cases/fit2u/bg001.png") no-repeat;
+  background-size: 100% 100%; }

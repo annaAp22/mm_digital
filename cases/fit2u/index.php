@@ -80,22 +80,24 @@
     <article class="unit unit--00">
       <div class="container">
         <div class="unit__block">&nbsp;
-          <img src="/assets/images/cases/fit2u/screen.png" alt="laptop">
+          <img class="unit__img00" src="/assets/images/cases/fit2u/screen.png" alt="laptop">
         </div>
         <div class="unit__block">
-           <a href="http://fit2u.ru/" class="unit__link proxima-extrabold"><i class="scale sprite_ms sprite_ms-link_1"></i> fit2u.ru</a>
-           <p class="proxima unit__description">Ребрендинг и новый дизайн магазина фитнес одежды</p>
+          <a href="http://fit2u.ru/" class="unit__link proxima-extrabold"><i
+                class="scale sprite_ms sprite_ms-link_1"></i><span>fit2u.ru</span></a>
+          <p class="proxima unit__descr">Ребрендинг и новый дизайн магазина фитнес одежды</p>
           <p class="unit__attainment proxima-extrabold">
             Создали яркий и узнаваемый интернет магазин
           </p>
           <div class="unit__task">
+            <div class="unit__task-corner"></div>
             <span class="proxima-bold">Задача:</span>
-            <ul class="proxima">
-              <li>Переработать устаревший дизайн интернет магазина спортивной одежды</li>
-              <li>Разработать удобный интерфейс</li>
-              <li>Разработать узнаваемый branding</li>
-              <li>Ускорить работу сайта</li>
-              <li>Сделать упаковку всех бизнес-преимуществ</li>
+            <ul class="proxima unit__task-lst">
+              <li><i class="trigon ">&#9650;</i> Переработать устаревший дизайн интернет магазина спортивной одежды</li>
+              <li><i class="trigon trigon--90">&#9650;</i>Разработать удобный интерфейс</li>
+              <li><i class="trigon trigon--45">&#9650;</i>Разработать узнаваемый branding</li>
+              <li><i class="trigon trigon--m45">&#9650;</i>Ускорить работу сайта</li>
+              <li><i class="trigon trigon--90">&#9650;</i>Сделать упаковку всех бизнес-преимуществ</li>
             </ul>
           </div>
         </div>
@@ -103,11 +105,19 @@
     <article class="unit unit--001">
       <div class="container">
         <div class="unit__block">&nbsp;
+          <h2>Создание логотипа и общей стилистики сайта</h2>
+          <p><span>Идея:</span> лого серьезного интернет-магазина одежды. Цифра два огибает букву U, что символизирует
+            дословно то, что впору клиенту. Как цифра огибает и подстраивается под букву U, так одежда магазина - это
+            именно то, что подойдет клиенту</p>
 
         </div>
         <div class="unit__block">
 
         </div>
+      </div>
+      <div class="unit__block-full">
+
+      </div>
     </article>
     <!-- Content End -->
   </main>
