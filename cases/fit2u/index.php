@@ -124,21 +124,24 @@
           </div>
         </div>
         <div class="unit__block">
-          <h2 class="proxima-extrabold">Работа над брэндом</h2>
+          <h2 class="unit__blk-title proxima-extrabold">Работа над брэндом</h2>
+          <div class="unit__brand">
+            <p class="proxima-semibold"><span class="proxima-bold">Fit2U</span> - это интернет-магазин модной фитнес одежды для
+              женщин и мужчина. Европейский дизайн и качественная ткань.
+            </p>
+            <p class="proxima-semibold">Заказчик очень хотел подчеркнуть яркий и позитивный настрой компании, дружелюбный сервис и, в то же время,
+              серьезность организации. Мы помогли в реализации узнаваемости компании</p>
+            <div class="button">
+              <button class="btn btn-2 proxima-extrabold ajax-modal" data-type="request">
+                Хочу заказать ребрендинг
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="unit__block-full">
-        <p class="proxima-semibold"><span class="proxima-bold">Fit2U</span> - это интернет-магазин модной фитнес одежды для
-          женщин и мужчина. Европейский дизайн и качественная ткань.
-        </p>
-        <p class="proxima-semibold">Заказчик очень хотел подчеркнуть яркий и позитивный настрой компании, дружелюбный сервис и, в то же время,
-          серьезность организации. Мы помогли в реализации узнаваемости компании</p>
-        <div class="column button">
-          <button class="btn btn-2 proxima-extrabold ajax-modal" data-type="request">
-            Хочу заказать ребрендинг
-          </button>
-        </div>
-      </div>
+    </article>
+    <article class="unit unit--01">
+
     </article>
     <!-- Content End -->
   </main>

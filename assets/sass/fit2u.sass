@@ -173,13 +173,14 @@ $xs: "(max-width: 575px)"
       display: block
       margin-bottom: 160px
       font-size: 36px
-      z-index: 1
+      z-index: 2
 
     &-lst
       position: absolute
+      z-index: 1
       top: 31px
       right: 0
-      width: 90.25%
+      width: 90%
       margin: 0
       padding-top: 50px
       padding-bottom: 50px
@@ -195,8 +196,8 @@ $xs: "(max-width: 575px)"
       padding-left: 42px
       margin: 0 0 22px 0
 .unit--001
-  min-height: 720px
-  background: url('../images/cases/fit2u/bg001.png') no-repeat
+  position: relative
+  background: url('../images/cases/fit2u/bg00_1.png') no-repeat
   background-size: 100% 100%
 
   .unit__block
@@ -204,7 +205,7 @@ $xs: "(max-width: 575px)"
   h3
    margin-top: 65px
    font-size: 24px
-    color: #000
+   color: #000
   .unit__idea
     margin-top: 55px
     margin-bottom: 42px
@@ -245,6 +246,40 @@ $xs: "(max-width: 575px)"
       background-color: #f4f4f4
     &--white
       background-color: #ffffff
+
+  .unit__blk-title
+    position: relative
+    font-size: 48px
+    color: #000
+    margin-top: 150px
+    padding-left: 10%
+    &:after
+      content: ""
+      position: absolute
+      top: 20px
+      left: 0
+      width: 30px
+      height: 3px
+      background: #35b056
+
+  .unit__brand
+    position: absolute
+    z-index: 1
+    width: 200%
+    //margin-left: 53%
+    background-image: linear-gradient( 2deg, rgb(253,217,47) 0%, rgb(238,125,57) 100%)
+    top: 280px
+    min-height: 470px
+    //
+
+
+.unit--01
+  min-height: 720px
+  background-color: cornflowerblue
+
+
+
+
 
 
 

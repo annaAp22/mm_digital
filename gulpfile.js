@@ -5,6 +5,9 @@ var gulp = require('gulp'),
     minifycss = require('gulp-minify-css'),
     server = require("browser-sync").create(),
     imagemin = require("gulp-imagemin"),
+    del = require("del"),
+    run = require("run-sequence"),
+    destImg = "assets/images/cases/fit2u",
     rename = require('gulp-rename');
 
     gulp.task('styles', function(){
@@ -35,13 +38,26 @@ gulp.task("serve", ["styles"], function () {
     gulp.watch("cases/**/*.php").on("change", server.reload);
 });
 // npm install gulp-imagemin --save-dev
+// npm install del --save-dev
+// npm install run-sequence --save-dev
 gulp.task("images", function () {
     return gulp.src("assets/img/fit2u/*.{png,jpg,gif}")
         .pipe(imagemin([
             imagemin.optipng({optimizationLevel: 3}),
             imagemin.jpegtran({progressive: true})
         ]))
-        .pipe(gulp.dest("assets/images/fit2u"));
+        .pipe(gulp.dest("assets/images/cases/fit2u"));
+});
+gulp.task("clean", function() {
+    return del("assets/images/cases/fit2u");
+});
+
+gulp.task("minimg", function(fn) {
+    run(
+        "clean",
+        "images",
+        fn
+    );
 });
 
 
