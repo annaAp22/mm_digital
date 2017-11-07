@@ -54,11 +54,15 @@ $xl: "(max-width: 1318px)"
 $lg-down: "(max-width: 1317px)"
 $lg-up: "(min-width: 1155px)"
 $lg: "(max-width: 1155px)"
+
+$md-down: "(max-width: 1154px)"
 $md-up: "(min-width: 840px)"
 $md: "(max-width: 840px)"
-$md-down: "(max-width: 1154px)"
+
+$sm-down: "(max-width: 839px)"
 $sm-up: "(min-width: 576px)"
 $sm: "(max-width: 576px)"
+
 $xs: "(max-width: 575px)"
 
 .container
@@ -91,6 +95,22 @@ $xs: "(max-width: 575px)"
   width: 100%
   min-width: 320px
   overflow: hidden
+
+.btn-fit
+  text-align: center
+  transition: background-color .3s ease, color .3s ease
+  font-family: "ProximaNova", sans-serif
+  display: table
+  background-color: #fff
+  color: #212121
+  font-size: 18px
+  line-height: 1.2
+  padding: 1em  3em
+  border-radius: 3em
+
+  //@include em-fallback('padding', 0, 3)
+  //@include em-fallback('height', 3)
+
 .trigon
   position: absolute
   top: 0
@@ -196,6 +216,38 @@ $xs: "(max-width: 575px)"
       position: relative
       padding-left: 42px
       margin: 0 0 22px 0
+
+  @media screen and #{$md-down}
+    .unit__block--1
+      display: none
+    .unit__block--2
+      width: 100%
+    //.unit__attainment:after
+    //  left: 0
+
+
+  @media screen and #{$sm-down}
+    background: #cc40ee
+  @media screen and #{$xs}
+    .unit__task-lst
+      position: static
+      z-index: 0
+      top: 0
+      right: 0
+      width: 90%
+      margin: 0
+      padding-top: 50px
+      padding-bottom: 50px
+      padding-left: 96px
+      padding-right: 2.5%
+      background-color: #fff
+      color: #131313
+      font-size: 18px
+      border-right: 6px solid #fcd82f
+      box-shadow: none
+
+
+
 .unit--001
   position: relative
   background: url('../images/cases/fit2u/bg00_1.png') no-repeat
@@ -217,13 +269,15 @@ $xs: "(max-width: 575px)"
     span
       font-size: 18px
       color: #e93f3f
-
+  .unit__img
+    max-width: 100%
+    height: auto
   .palette
     display: flex
     flex-wrap: wrap
     flex-grow: 1
     align-items: flex-start
-    margin-top: 42px
+    margin-top: 30px
     margin-bottom: 100px
     font-size: 14px
     color: #000
@@ -235,6 +289,7 @@ $xs: "(max-width: 575px)"
     align-items: center
     justify-content: center
     box-shadow: 0px 28px 35px 0px rgba(55, 55, 55, 0.24)
+    margin-top: 12px
     &:not(:last-child)
       margin-right: 26px
     &--yellow
@@ -265,15 +320,29 @@ $xs: "(max-width: 575px)"
       height: 3px
       background: #35b056
 
-  .unit__brand
+
+  .unit__brand-full
     position: absolute
     z-index: 1
-    width: 200%
-    //margin-left: 53%
-    background-image: linear-gradient( 92deg, rgb(253,217,47) 0%, rgb(238,125,57) 50%)
-    top: 280px
+    width: calc(50% - 60px)
     min-height: 470px
-    //
+    background-image: linear-gradient( 92deg, rgb(253,217,47) 0%, rgb(238,125,57) 100%)
+    right: 0
+    bottom: -35px
+
+    p
+      font-size: 20px
+      line-height: 24px
+      color: #a4511e
+    span
+      font-size: 30px
+  .unit__blk-content
+    max-width: 482px
+    margin-top: 80px
+    margin-left: 80px
+    margin-bottom: 80px
+    padding-right: 12px
+
 
 
 .unit--01
