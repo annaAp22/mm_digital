@@ -32,7 +32,8 @@
 
 .main-page {
   width: 100%;
-  min-width: 320px; }
+  min-width: 320px;
+  overflow: hidden; }
 
 .trigon {
   position: absolute;
@@ -197,7 +198,7 @@
     position: absolute;
     z-index: 1;
     width: 200%;
-    background-image: linear-gradient(2deg, #fdd92f 0%, #ee7d39 100%);
+    background-image: linear-gradient(92deg, #fdd92f 0%, #ee7d39 50%);
     top: 280px;
     min-height: 470px; }
 
