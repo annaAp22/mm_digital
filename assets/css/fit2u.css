@@ -32,8 +32,7 @@
 
 .main-page {
   width: 100%;
-  min-width: 320px;
-  overflow: hidden; }
+  min-width: 320px; }
 
 .btn-fit {
   text-align: center;
@@ -72,6 +71,7 @@
   background-size: auto 100%; }
   .unit--00 .unit__img00 {
     position: absolute;
+    z-index: 1;
     display: block;
     top: 0;
     right: 7%; }
@@ -137,30 +137,40 @@
       padding-left: 42px;
       margin: 0 0 22px 0; }
   @media screen and (max-width: 1154px) {
-    .unit--00 .unit__block--1 {
-      display: none; }
-    .unit--00 .unit__block--2 {
-      width: 100%; } }
+    .unit--00 {
+      background: #cc40ee linear-gradient(180deg, #e64ef4 0%, #a426e6 100%); }
+      .unit--00 .unit__block--1 {
+        width: 100%; }
+      .unit--00 .unit__img00 {
+        position: static;
+        max-width: 100%;
+        height: auto; }
+      .unit--00 .unit__block--2 {
+        width: 100%; } }
   @media screen and (max-width: 839px) {
     .unit--00 {
-      background: #cc40ee; } }
-  @media screen and (max-width: 575px) {
-    .unit--00 .unit__task-lst {
-      position: static;
-      z-index: 0;
-      top: 0;
-      right: 0;
-      width: 90%;
-      margin: 0;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      padding-left: 96px;
-      padding-right: 2.5%;
-      background-color: #fff;
-      color: #131313;
-      font-size: 18px;
-      border-right: 6px solid #fcd82f;
-      box-shadow: none; } }
+      background: #cc40ee; }
+      .unit--00 .unit__task span {
+        margin-bottom: 12px; }
+      .unit--00 .unit__task-corner {
+        margin-bottom: 12px; }
+      .unit--00 .unit__task-lst {
+        position: static;
+        z-index: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        background-color: #fff;
+        color: #131313;
+        font-size: 18px;
+        border-right: 6px solid #fcd82f;
+        border-bottom: 6px solid #fcd82f;
+        box-shadow: none; } }
 
 .unit--001 {
   position: relative;
@@ -251,11 +261,70 @@
       font-size: 30px; }
   .unit--001 .unit__blk-content {
     max-width: 482px;
-    margin-top: 80px;
-    margin-left: 80px;
-    margin-bottom: 80px;
+    padding: 80px;
     padding-right: 12px; }
+  @media screen and (max-width: 1154px) {
+    .unit--001 {
+      background: #f3f3f3; }
+      .unit--001 .unit__block {
+        width: 100%; }
+      .unit--001 .unit__idea {
+        font-size: 16px; }
+      .unit--001 .palette-item:not(:last-child) {
+        margin-right: 12px; }
+      .unit--001 .unit__blk-title {
+        margin-top: 0; }
+      .unit--001 .unit__brand-full {
+        position: static;
+        z-index: 0;
+        width: 100%; } }
+  @media screen and (max-width: 576px) {
+    .unit--001 .unit__blk-content {
+      max-width: 100%;
+      padding-left: 4%;
+      padding-right: 2.5%; } }
 
 .unit--01 {
-  min-height: 720px;
-  background-color: cornflowerblue; }
+  min-height: 2000px;
+  background: #a426e6 linear-gradient(-90deg, #4e9cf4 0%, #a426e6 100%) no-repeat, #fff;
+  background-size: 100% 1632px; }
+  .unit--01 .unit__title {
+    position: relative;
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    color: #fff; }
+    .unit--01 .unit__title-bck {
+      margin: 0;
+      font-size: 159px;
+      color: #6256be; }
+    .unit--01 .unit__title-bck--2 {
+      font-size: 130px; }
+    .unit--01 .unit__title h2 {
+      position: absolute;
+      bottom: 19px;
+      text-align: center;
+      width: 100%;
+      font-size: 68px; }
+    .unit--01 .unit__title .unit__txt {
+      position: absolute;
+      bottom: 6px;
+      text-align: center;
+      width: 100%;
+      font-size: 18px; }
+      .unit--01 .unit__title .unit__txt span {
+        font-size: 36px;
+        line-height: 50px; }
+  .unit--01 .unit_descr {
+    margin-top: 55px;
+    padding: 0 193px;
+    color: #ffffff;
+    text-align: center; }
+  @media screen and (max-width: 1154px) {
+    .unit--01 .unit_descr {
+      padding: 0 2.5%; }
+    .unit--01 .unit__title h2 {
+      font-size: 42px; } }
+  @media screen and (max-width: 575px) {
+    .unit--01 .unit__title-bck--2 {
+      font-size: 120px; } }
