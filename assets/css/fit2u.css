@@ -285,7 +285,7 @@
       padding-right: 2.5%; } }
 
 .unit--01 {
-  min-height: 2000px;
+  position: relative;
   background: #a426e6 linear-gradient(-90deg, #4e9cf4 0%, #a426e6 100%) no-repeat, #fff;
   background-size: 100% 1632px; }
   .unit--01 .unit__title {
@@ -320,11 +320,65 @@
     padding: 0 193px;
     color: #ffffff;
     text-align: center; }
+  .unit--01 .unit__wrap {
+    position: relative;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 75px; }
+  .unit--01 .unit__image0 {
+    max-width: 1108px;
+    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.27); }
+    .unit--01 .unit__image0 .unit__img0 {
+      width: 100%;
+      height: auto; }
+  .unit--01 .unit__image {
+    position: absolute;
+    z-index: 1;
+    box-shadow: 65px 0px 65px 0px rgba(0, 0, 0, 0.27); }
+    .unit--01 .unit__image--1 {
+      left: 0;
+      top: 380px;
+      width: 55.11182%; }
+    .unit--01 .unit__image--2 {
+      right: 0;
+      top: 990px;
+      width: 46.72524%; }
+    .unit--01 .unit__image--3 {
+      right: 0;
+      bottom: 1470px;
+      width: 57.90735%; }
+    .unit--01 .unit__image--4 {
+      left: 0;
+      bottom: 804px;
+      width: 36.02236%;
+      box-shadow: none; }
+    .unit--01 .unit__image img {
+      width: 100%;
+      height: auto; }
+  .unit--01 .unit__img-full {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    z-index: 1; }
   @media screen and (max-width: 1154px) {
     .unit--01 .unit_descr {
       padding: 0 2.5%; }
     .unit--01 .unit__title h2 {
-      font-size: 42px; } }
+      font-size: 42px; }
+    .unit--01 .unit__image--4 {
+      bottom: 280px; }
+    .unit--01 .unit__img-full, .unit--01 .unit__image--2, .unit--01 .unit__image--3 {
+      display: none; } }
   @media screen and (max-width: 575px) {
     .unit--01 .unit__title-bck--2 {
-      font-size: 120px; } }
+      font-size: 120px; }
+    .unit--01 .unit__image--1 {
+      top: 180px; } }

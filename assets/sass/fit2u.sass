@@ -376,7 +376,7 @@ $xs: "(max-width: 575px)"
 
 
 .unit--01
-  min-height: 2000px
+  position: relative
   background: #a426e6  linear-gradient( -90deg, rgb(78,156,244) 0%, rgb(164,38,230) 100%) no-repeat ,#fff
   background-size: 100% 1632px
   .unit__title
@@ -391,6 +391,7 @@ $xs: "(max-width: 575px)"
       color: #6256be
     &-bck--2
       font-size: 130px
+
     h2
       position: absolute
       bottom: 19px
@@ -415,15 +416,70 @@ $xs: "(max-width: 575px)"
     color: #ffffff
     text-align: center
 
+  .unit__wrap
+    position: relative
+    width: 100%
+    display: flex
+    flex-grow: 1
+    align-items: flex-start
+    justify-content: center
+    margin-top: 75px
+
+  .unit__image0
+    max-width: 1108px
+    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.27)
+    //margin: 0 auto
+    .unit__img0
+      width: 100%
+      height: auto
+
+  .unit__image
+    position: absolute
+    z-index: 1
+    box-shadow: 65px 0px 65px 0px rgba(0, 0, 0, 0.27)
+    &--1
+      left: 0
+      top: 380px
+      width: 690/1252*100%
+    &--2
+      right: 0
+      top: 990px
+      width: 585/1252*100%
+    &--3
+      right: 0
+      bottom: 1470px
+      width: 725/1252*100%
+    &--4
+      left: 0
+      bottom: 804px
+      width: 451/1252*100%
+      box-shadow: none
+    img
+      width: 100%
+      height: auto
+  .unit__img-full
+    position: absolute
+    bottom: 0
+    right: 0
+    display: block
+    z-index: 1
+
+
   @media screen and #{$md-down}
     .unit_descr
       padding: 0 2.5%
     .unit__title
       h2
         font-size: 42px
+    .unit__image--4
+      bottom: 280px
+    .unit__img-full ,.unit__image--2, .unit__image--3
+      display: none
   @media screen and #{$xs}
     .unit__title-bck--2
       font-size: 120px
+    .unit__image--1
+      top: 180px
 
 
 
