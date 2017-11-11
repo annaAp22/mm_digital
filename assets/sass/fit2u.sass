@@ -65,6 +65,8 @@ $sm: "(max-width: 576px)"
 
 $xs: "(max-width: 575px)"
 
+
+
 .container
   display: flex
   flex-grow: 1
@@ -94,7 +96,7 @@ $xs: "(max-width: 575px)"
 .main-page
   width: 100%
   min-width: 320px
-  //overflow: hidden
+//overflow: hidden
 
 .btn-fit
   text-align: center
@@ -105,11 +107,13 @@ $xs: "(max-width: 575px)"
   color: #212121
   font-size: 18px
   line-height: 1.2
-  padding: 1em  3em
+  padding: 18px 54px
+  padding: 1em 3em
+  border-radius: 54px
   border-radius: 3em
 
-  //@include em-fallback('padding', 0, 3)
-  //@include em-fallback('height', 3)
+//@include em-fallback('padding', 0, 3)
+//@include em-fallback('height', 3)
 
 .trigon
   position: absolute
@@ -125,6 +129,7 @@ $xs: "(max-width: 575px)"
     transform: rotate(45deg)
   &--m45
     transform: rotate(-45deg)
+
 .unit
   width: 100%
 
@@ -133,13 +138,7 @@ $xs: "(max-width: 575px)"
   width: 50%
 
 //
-//background: linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%),
-//background: url('../images/cases/fit2u/bg00.jpg') no-repeat right bottom ,linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%)
-//background-size: auto 100%
-//url('../images/cases/fit2u/bg00.jpg') no-repeat
-//background-image: linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%)
-//background-repeat: no-repeat
-//background-position:
+
 .unit--00
   background: url('../images/cases/fit2u/bg00.jpg') no-repeat right bottom #cc40ee
   background-size: auto 100%
@@ -223,14 +222,14 @@ $xs: "(max-width: 575px)"
   //    max-width: 100%
   //    height: auto
   @media screen and #{$md-down}
-    background: #cc40ee linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%)
+    background: #cc40ee linear-gradient(180deg, rgb(230, 78, 244) 0%, rgb(164, 38, 230) 100%)
     .unit__block--1
       width: 100%
     .unit__img00
       position: static
       max-width: 100%
       height: auto
-      //display: none
+    //display: none
     .unit__block--2
       width: 100%
   @media screen and #{$sm-down}
@@ -269,9 +268,9 @@ $xs: "(max-width: 575px)"
   .unit__block
     padding-right: 2.5%
   h3
-   margin-top: 65px
-   font-size: 24px
-   color: #000
+    margin-top: 65px
+    font-size: 24px
+    color: #000
   .unit__idea
     margin-top: 55px
     margin-bottom: 42px
@@ -331,13 +330,12 @@ $xs: "(max-width: 575px)"
       height: 3px
       background: #35b056
 
-
   .unit__brand-full
     position: absolute
     z-index: 1
     width: calc(50% - 60px)
     min-height: 470px
-    background-image: linear-gradient( 92deg, rgb(253,217,47) 0%, rgb(238,125,57) 100%)
+    background-image: linear-gradient(92deg, rgb(253, 217, 47) 0%, rgb(238, 125, 57) 100%)
     right: 0
     bottom: -35px
 
@@ -363,7 +361,7 @@ $xs: "(max-width: 575px)"
       &:not(:last-child)
         margin-right: 12px
     .unit__blk-title
-       margin-top: 0
+      margin-top: 0
     .unit__brand-full
       position: static
       z-index: 0
@@ -374,10 +372,9 @@ $xs: "(max-width: 575px)"
       padding-left: 4%
       padding-right: 2.5%
 
-
 .unit--01
   position: relative
-  background: #a426e6  linear-gradient( -90deg, rgb(78,156,244) 0%, rgb(164,38,230) 100%) no-repeat ,#fff
+  background: #a426e6 linear-gradient(-90deg, rgb(78, 156, 244) 0%, rgb(164, 38, 230) 100%) no-repeat, #fff
   background-size: 100% 1632px
   .unit__title
     position: relative
@@ -409,7 +406,6 @@ $xs: "(max-width: 575px)"
         font-size: 36px
         line-height: 50px
 
-
   .unit_descr
     margin-top: 55px
     padding: 0 193px
@@ -436,7 +432,7 @@ $xs: "(max-width: 575px)"
   .unit__image
     position: absolute
     z-index: 1
-    box-shadow: 65px 0px 65px 0px rgba(0, 0, 0, 0.27)
+    box-shadow: 0 61px 65px 0px rgba(0, 0, 0, 0.31)
     &--1
       left: 0
       top: 380px
@@ -464,7 +460,6 @@ $xs: "(max-width: 575px)"
     display: block
     z-index: 1
 
-
   @media screen and #{$md-down}
     .unit_descr
       padding: 0 2.5%
@@ -473,13 +468,133 @@ $xs: "(max-width: 575px)"
         font-size: 42px
     .unit__image--4
       bottom: 280px
-    .unit__img-full ,.unit__image--2, .unit__image--3
+    .unit__img-full, .unit__image--2, .unit__image--3
       display: none
   @media screen and #{$xs}
     .unit__title-bck--2
       font-size: 120px
     .unit__image--1
       top: 180px
+//      02
+//
+//background: linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%),
+//background: url('../images/cases/fit2u/bg00.jpg') no-repeat right bottom ,linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%)
+//background-size: auto 100%
+//url('../images/cases/fit2u/bg00.jpg') no-repeat
+//background-image: linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%)
+//background-repeat: no-repeat
+//background-position:
+.unit--02-1
+  min-height: 700px
+  background:
+    image: url('../images/cases/fit2u/men.png'),linear-gradient(90deg, rgb(253, 217, 47) 0%, rgb(238, 125, 57) 100%)
+    position: left bottom
+    repeat: no-repeat
+    color: #fdd92f
+    size: 41% auto ,100% 100%
+  .container
+    position: relative
+    justify-content: space-between
+
+  .unit__block
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    flex-grow: 1
+
+  .unit__block--1
+    width:  915/1252*100%
+
+  .unit__title
+    position: relative
+    width: 100%
+    margin-top: 70px
+    text-align: left
+    color: #fff
+    &-bck
+      margin: 0
+      font-size: 159px
+      color: #f08c37
+
+    h2
+      position: absolute
+      bottom: -15px
+      left: 97/915*100%
+      font-size: 52px
+      line-height: 1.4
+
+  .unit_descr
+    margin-top: 45px
+    padding-left:  97/915*100%
+    padding-right:  48/915*100%
+    color: #ffffff
+    line-height: 1.4
+
+  .unit__img1
+    position: absolute
+    z-index: 1
+    width: 888/1252*100%
+    height: auto
+    left: 0
+    bottom: -85/1252*100%
+
+  .unit__block--2
+    width: 296/1252*100%
+    color: #ffffff
+    padding-top: 190/1252*100%
+    padding-bottom: 595/1252*100%
+
+  h3
+    font-size: 36px
+    //margin-top: 190px
+    margin-bottom: 53px
+
+  .unit__lst
+    width: 100%
+    padding: 0
+    margin: 0
+    li
+      position: relative
+      padding-left: 34px
+      margin: 0 0 32px 0
+      i
+        color: #d96221
+
+  .unit__img2
+    position: absolute
+    z-index: 1
+    width: 100%
+    height: auto
+    left: 0
+    bottom: -155/1252*100%
+    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.31)
+
+  @media screen and (max-width: 1600px)
+    background: #fdd92f linear-gradient(90deg, rgb(253, 217, 47) 0%, rgb(238, 125, 57) 100%)
+  @media screen and #{$sm-down}
+    .unit__block--1
+      width: 100%
+    .unit__block--2
+      width: 100%
+      padding: 0
+      order: 2
+
+    .unit__img1
+      position: static
+      width: 888/1252*100%
+      height: auto
+      left: 0
+      bottom: -85/1252*100%
+      order: 1
+    .unit__title h2
+      font-size: 37px
+    .unit__img2
+      display: none
+
+
+
+
+
 
 
 

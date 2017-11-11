@@ -43,7 +43,9 @@
   color: #212121;
   font-size: 18px;
   line-height: 1.2;
-  padding: 1em  3em;
+  padding: 18px 54px;
+  padding: 1em 3em;
+  border-radius: 54px;
   border-radius: 3em; }
 
 .trigon {
@@ -341,7 +343,7 @@
   .unit--01 .unit__image {
     position: absolute;
     z-index: 1;
-    box-shadow: 65px 0px 65px 0px rgba(0, 0, 0, 0.27); }
+    box-shadow: 0 61px 65px 0px rgba(0, 0, 0, 0.31); }
     .unit--01 .unit__image--1 {
       left: 0;
       top: 380px;
@@ -382,3 +384,104 @@
       font-size: 120px; }
     .unit--01 .unit__image--1 {
       top: 180px; } }
+
+.unit--02-1 {
+  min-height: 700px;
+  background-image: url("../images/cases/fit2u/men.png"), linear-gradient(90deg, #fdd92f 0%, #ee7d39 100%);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-color: #fdd92f;
+  background-size: 41% auto ,100% 100%; }
+  .unit--02-1 .container {
+    position: relative;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .unit--02-1 .unit__block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+  .unit--02-1 .unit__block--1 {
+    width: 73.08307%; }
+  .unit--02-1 .unit__title {
+    position: relative;
+    width: 100%;
+    margin-top: 70px;
+    text-align: left;
+    color: #fff; }
+    .unit--02-1 .unit__title-bck {
+      margin: 0;
+      font-size: 159px;
+      color: #f08c37; }
+    .unit--02-1 .unit__title h2 {
+      position: absolute;
+      bottom: -15px;
+      left: 10.60109%;
+      font-size: 52px;
+      line-height: 1.4; }
+  .unit--02-1 .unit_descr {
+    margin-top: 45px;
+    padding-left: 10.60109%;
+    padding-right: 5.2459%;
+    color: #ffffff;
+    line-height: 1.4; }
+  .unit--02-1 .unit__img1 {
+    position: absolute;
+    z-index: 1;
+    width: 70.92652%;
+    height: auto;
+    left: 0;
+    bottom: -6.78914%; }
+  .unit--02-1 .unit__block--2 {
+    width: 23.64217%;
+    color: #ffffff;
+    padding-top: 15.17572%;
+    padding-bottom: 47.52396%; }
+  .unit--02-1 h3 {
+    font-size: 36px;
+    margin-bottom: 53px; }
+  .unit--02-1 .unit__lst {
+    width: 100%;
+    padding: 0;
+    margin: 0; }
+    .unit--02-1 .unit__lst li {
+      position: relative;
+      padding-left: 34px;
+      margin: 0 0 32px 0; }
+      .unit--02-1 .unit__lst li i {
+        color: #d96221; }
+  .unit--02-1 .unit__img2 {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: -12.38019%;
+    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.31); }
+  @media screen and (max-width: 1600px) {
+    .unit--02-1 {
+      background: #fdd92f linear-gradient(90deg, #fdd92f 0%, #ee7d39 100%); } }
+  @media screen and (max-width: 839px) {
+    .unit--02-1 .unit__block--1 {
+      width: 100%; }
+    .unit--02-1 .unit__block--2 {
+      width: 100%;
+      padding: 0;
+      -ms-flex-order: 2;
+      order: 2; }
+    .unit--02-1 .unit__img1 {
+      position: static;
+      width: 70.92652%;
+      height: auto;
+      left: 0;
+      bottom: -6.78914%;
+      -ms-flex-order: 1;
+      order: 1; }
+    .unit--02-1 .unit__title h2 {
+      font-size: 37px; }
+    .unit--02-1 .unit__img2 {
+      display: none; } }
