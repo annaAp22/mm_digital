@@ -203,14 +203,57 @@
           <h3 class="proxima-extrabold">Все под рукой!</h3>
           <ul class="proxima-semibold unit__lst">
             <li><i class="trigon trigon--45">&#9650;</i>Удобные фильтры подбора товара</li>
-            <li><i class="trigon trigon--90">&#9650;</i>Слева, в заметном месте дубль каталога. Это удобно. Это протестированно</li>
-            <li><i class="trigon trigon--45">&#9650;</i>Товары включают выбор размера без надобности перехода в основную карточку </li>
+            <li><i class="trigon trigon--90">&#9650;</i>Слева, в заметном месте дубль каталога. Это удобно. Это
+              протестированно
+            </li>
+            <li><i class="trigon trigon--45">&#9650;</i>Товары включают выбор размера без надобности перехода в основную
+              карточку
+            </li>
           </ul>
           <img class="unit__img2" src="/assets/images/cases/fit2u/filter.png" alt="монитор">
         </div>
         <img class="unit__img1" src="/assets/images/cases/fit2u/DesignHere.png" alt="монитор">
       </div>
-
+    </article>
+    <article class="unit unit--02-2">
+      <div class="unit__background">
+        <div class="container">
+          <div class="unit__block unit__block--1">
+            <h3 class="proxima-extrabold">Расширенный функционал, широкие возможности</h3>
+            <p class="proxima-semibold unit__descr">Возможность переключаться между видом листинга. Кто-то любит минималистичное
+              представление товаров, а кто-то хочет видеть сразу основную информацию и функционал</p>
+            <img class="unit__img1" src="/assets/images/cases/fit2u/functional.jpg" alt="Изображение функционал">
+          </div>
+          <div class="unit__block unit__block--2">
+            <ul class="proxima-extrabold unit__lst">
+              <li><i class="trigon trigon--45">&#9650;</i>Сортировка товаров по цене, популярности, новинкам, акциям
+              </li>
+              <li><i class="trigon trigon--90">&#9650;</i>Возможность добавить товар в закладки, чтобы вернуться к нему
+                позднее
+              </li>
+              <li><i class="trigon trigon--m45">&#9650;</i>Прямая ссылка на отзывы о товаре</li>
+              <li><i class="trigon ">&#9650;</i>Заметная кнопка “В корзину”</li>
+            </ul>
+            <img class="unit__img2" src="/assets/images/cases/fit2u/catalog2.jpg" alt="Изображение каталог">
+          </div>
+        </div>
+      </div>
+      <div class="unit__blk-full">
+        <h4 class="proxima-extrabold">По статистике 60% посетителей уходят с сайта спустя 15 секунд из-за неудобства и запутанности его архитектуры </h4>
+        <p class="proxima-semibold">Хватит терять клиентов! Доверьте разработку Вашего сайта нам</p>
+      </div>
+      <section class="unit__form">
+        <h2 class="proxima-extrabold">Получить аудит Интернет-магазина</h2>
+        <p class="unit__form-txt">Введите Ваш телефон и адрес интернет-магазина, мы проведём комплексный аудит и предоставим Вам простую и понятную инструкцию, с перечнем его недостатков</p>
+        <form action="/ajax/index.php" class="form-ajax" method="post">
+          <input type="text" name="name" placeholder="Адрес Вашего интернет-магазина" class="uv_name" required>
+          <input type="text" name="phone" placeholder="Ваш телефон" class="uv_tel" required>
+          <input type="hidden" name="action" value="send">
+          <input type="text" name="check" value="">
+          <input type="hidden" name="time" value="">
+          <button class="form_re_1 btn-fit">Заказать</button>
+        </form>
+      </section>
     </article>
     <!-- Content End -->
   </main>

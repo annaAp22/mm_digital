@@ -46,7 +46,11 @@
   padding: 18px 54px;
   padding: 1em 3em;
   border-radius: 54px;
-  border-radius: 3em; }
+  border-radius: 3em;
+  transition: all .6s ease; }
+  .btn-fit:hover, .btn-fit:focus {
+    background-color: #f3f3f3;
+    cursor: pointer; }
 
 .trigon {
   position: absolute;
@@ -386,7 +390,6 @@
       top: 180px; } }
 
 .unit--02-1 {
-  min-height: 700px;
   background-image: url("../images/cases/fit2u/men.png"), linear-gradient(90deg, #fdd92f 0%, #ee7d39 100%);
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -485,3 +488,86 @@
       font-size: 37px; }
     .unit--02-1 .unit__img2 {
       display: none; } }
+
+.unit--02-2 .unit__background {
+  background-image: url("../images/cases/fit2u/bg00.jpg"), none;
+  background-repeat: no-repeat, no-repeat;
+  background-position: right top,0 0;
+  background-color: #f6f6f6;
+  background-size: 47.5% 100% ,100% 100%; }
+
+.unit--02-2 .unit__block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-positive: 1;
+  flex-grow: 1; }
+  .unit--02-2 .unit__block--1 {
+    width: 53.8%;
+    padding-top: 9.90415%; }
+    .unit--02-2 .unit__block--1 h3 {
+      font-size: 42px;
+      padding-right: 7.12166%; }
+  .unit--02-2 .unit__block--2 {
+    position: relative;
+    width: 46.2%;
+    padding-top: 20.44728%;
+    padding-bottom: 27.95527%; }
+
+.unit--02-2 .unit__descr {
+  margin-top: 44px;
+  margin-bottom: 60px;
+  padding-left: 5.04451%;
+  padding-right: 7.12166%;
+  border-left: 6px solid #35b056;
+  line-height: 24px; }
+
+.unit--02-2 .unit__img1 {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.31);
+  z-index: 1; }
+
+.unit--02-2 .unit__lst {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-left: 16.609%; }
+  .unit--02-2 .unit__lst li {
+    position: relative;
+    padding-left: 38px;
+    margin: 0 0 26px 0;
+    font-size: 18px;
+    color: #ffffff; }
+    .unit--02-2 .unit__lst li i {
+      color: #fff; }
+
+.unit--02-2 .unit__img2 {
+  position: absolute;
+  width: 117.64706%;
+  height: auto;
+  right: 0;
+  bottom: -17.30104%;
+  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.31); }
+
+@media screen and (max-width: 1600px) {
+  .unit--02-2 .unit__background {
+    background: #35b056 linear-gradient(90deg, #f9f9f9 52.5%, #35b056 52.5%); } }
+
+@media screen and (max-width: 839px) {
+  .unit--02-2 .unit__background {
+    background: #f9f9f9; }
+  .unit--02-2 .unit__block--1 {
+    width: 100%; }
+  .unit--02-2 .unit__block--2 {
+    width: 100%;
+    background: #35b056; }
+  .unit--02-2 .unit__lst {
+    margin-left: 12px; }
+  .unit--02-2 .unit__img2 {
+    position: static;
+    max-width: 100%;
+    height: auto; } }
