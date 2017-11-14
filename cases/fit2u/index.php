@@ -253,7 +253,8 @@
         <section class="unit__form">
             <div class="container">
                 <h2 class="proxima-extrabold unit__form-title">Получить аудит Интернет-магазина</h2>
-                <p class="proxima unit__form-txt">Введите Ваш телефон и адрес интернет-магазина, мы проведём комплексный аудит и
+                <p class="proxima unit__form-txt">Введите Ваш телефон и адрес интернет-магазина, мы проведём комплексный
+                    аудит и
                     предоставим Вам простую и понятную инструкцию, с перечнем его недостатков</p>
                 <form action="/ajax/index.php" class="unit__form-form form-ajax" method="post">
                     <input type="text" name="name" placeholder="Адрес Вашего интернет-магазина" class="uv_name"
@@ -266,6 +267,48 @@
                 </form>
             </div>
         </section>
+    </article>
+    <article class="unit unit--03">
+        <div class="container ">
+            <div class="unit__title">
+                <p class="unit__title-bck proxima-semibold">03</p>
+                <h2 class="proxima-extrabold">Информативная карточка товара </h2>
+            </div>
+            <p class="unit__descr proxima-semibold">Проработанная карточка товара, позволяющая узнать все самые важные
+                характеристики одежды, а также информацию по доставке, оплате и условиям покупки, не покидая текущую
+                директорию. А это значит, что клиент с большей долей вероятности выберет нужный товар и совершит
+                покупку, не тратя время на поиск интересующей информации. Это важно.</p>
+        </div>
+        <div class="unit__background">
+            <div class="container ">
+                <img src="/assets/images/cases/fit2u/product.jpg"
+                     alt="Изображение карточки товара">
+                <div class="unit_wrap">
+                    <img src="/assets/images/cases/fit2u/plus.png" alt="Изображение ">
+                    <ul class="proxima-semibold unit__lst">
+                        <li><i class="trigon trigon--45">&#9650;</i>В карточке сосредоточен весь функционал выбора
+                            товара. Например, “собери весь комплект”
+                        </li>
+                        <li><i class="trigon trigon--45">&#9650;</i>Яркие мотиваторы и триггеры к совершению покупки
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="proxima-extrabold unit__title3">Отзывы как элемент доверия </h3>
+                <img src="/assets/images/cases/fit2u/reviews.png" alt="Изображение отзывы">
+            </div>
+        </div>
+        <div class="unit__background-grey">
+            <div class="container ">
+                <img src="/assets/images/cases/fit2u/product.jpg"
+                     alt="Изображение карточки товара">
+                <div class="unit__block">
+                    <h3 class="proxima-extrabold unit__blk-title">Интерактив для стимуляции продаж</h3>
+                    <p class="proxima-semibold ">Мы разработали виртуальный подиум для того, чтобы клиент мог выбрать подходящий комплект одежды.
+                    </p>
+                </div>
+            </div>
+
+        </div>
     </article>
     <!-- Content End -->
 </main>

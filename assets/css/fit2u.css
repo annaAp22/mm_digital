@@ -496,7 +496,7 @@
       display: none; } }
 
 .unit--02-2 .unit__background {
-  background-image: url("../images/cases/fit2u/bg3.jpg"), linear-gradient(90deg, #f9f9f9 52.5%, #35b056 52.5%);
+  background-image: url("../images/cases/fit2u/bg02.jpg"), linear-gradient(90deg, #f9f9f9 52.5%, #35b056 52.5%);
   background-repeat: no-repeat, no-repeat;
   background-position: right top,0 0;
   background-color: #35b056;
@@ -631,6 +631,8 @@
     margin: 0 auto;
     width: 46.16613%;
     height: 50px;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 16px;
     color: #ffffff;
     background-color: #96cc4a; }
@@ -643,7 +645,9 @@
     background: #35b056 linear-gradient(90deg, #f9f9f9 52.5%, #35b056 52.5%); }
   .unit--02-2 .unit__form-form {
     -ms-flex-pack: center;
-    justify-content: center; } }
+    justify-content: center; }
+    .unit--02-2 .unit__form-form input {
+      width: 85%; } }
 
 @media screen and (max-width: 839px) {
   .unit--02-2 .unit__background {
@@ -663,3 +667,48 @@
     font-size: 32px; }
   .unit--02-2 .unit__blk-full p {
     width: 80%; } }
+
+.unit--03 .unit__title {
+  width: 53.8%;
+  position: relative;
+  margin-top: 67px;
+  margin-right: 3.84615%;
+  padding-left: 10px;
+  text-align: left; }
+  .unit--03 .unit__title-bck {
+    margin: 0;
+    font-size: 159px;
+    color: #d5d5d5; }
+  .unit--03 .unit__title h2 {
+    position: absolute;
+    bottom: -29px;
+    left: 17.06231%;
+    font-size: 68px;
+    color: #161616; }
+
+.unit--03 .unit__descr {
+  width: 42.30769%;
+  margin-top: 12.9393%;
+  margin-bottom: 17.17252%;
+  margin-right: 0;
+  margin-left: auto;
+  padding-right: 10px;
+  color: #161616;
+  line-height: 24px; }
+
+@media screen and (max-width: 1317px) {
+  .unit--03 .unit__title h2 {
+    font-size: 60px; } }
+
+@media screen and (max-width: 1154px) {
+  .unit--03 .unit__title {
+    width: 100%; }
+    .unit--03 .unit__title h2 {
+      bottom: -7px; }
+  .unit--03 .unit__descr {
+    width: 100%; } }
+
+@media screen and (max-width: 839px) {
+  .unit--03 .unit__title h2 {
+    font-size: 32px;
+    bottom: 5px; } }

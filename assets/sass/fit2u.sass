@@ -606,7 +606,7 @@ $xs: "(max-width: 575px)"
 .unit--02-2
   .unit__background
     background:
-      image: url('../images/cases/fit2u/bg3.jpg'),linear-gradient(90deg, #f9f9f9 52.5%, #35b056 52.5%)
+      image: url('../images/cases/fit2u/bg02.jpg'),linear-gradient(90deg, #f9f9f9 52.5%, #35b056 52.5%)
       repeat: no-repeat, no-repeat
       position: right top,0 0
       color: #35b056
@@ -730,6 +730,8 @@ $xs: "(max-width: 575px)"
       margin: 0 auto
       width: 578/1252*100%
       height: 50px
+      padding-left: 0
+      padding-right: 0
       font-size: 16px
       color: #ffffff
       background-color: #96cc4a
@@ -738,13 +740,13 @@ $xs: "(max-width: 575px)"
         color: #96cc4a
 
 
-
-
   @media screen and #{$md-down}
     .unit__background
       background: #35b056 linear-gradient(90deg, #f9f9f9 52.5%, #35b056 52.5%)
     .unit__form-form
       justify-content: center
+      input
+        width: 85%
   @media screen and #{$sm-down}
     .unit__background
       background: #f9f9f9
@@ -766,8 +768,54 @@ $xs: "(max-width: 575px)"
     .unit__blk-full p
       width: 80%
 
+.unit--03
 
+  .unit__title
+    width: 53.8%
+    position: relative
+    margin-top: 67px
+    margin-right: 1/26*100%
+    padding-left: 10px
+    text-align: left
 
+    &-bck
+      margin: 0
+      font-size: 159px
+      color: #d5d5d5
+
+    h2
+      position: absolute
+      bottom: -29px
+      left: 115/674*100%
+      font-size: 68px
+      color: #161616
+
+  .unit__descr
+    width: 11/26*100%
+    margin-top: 162/1252*100%
+    margin-bottom: 215/1252*100%
+    margin-right: 0
+    margin-left: auto
+    padding-right: 10px
+    color: #161616
+    line-height: 24px
+
+  @media screen and #{$lg-down}
+    .unit__title h2
+      font-size: 60px
+
+  @media screen and #{$md-down}
+    .unit__title
+      width: 100%
+      h2
+        bottom: -7px
+    .unit__descr
+      width: 100%
+
+  @media screen and #{$sm-down}
+    .unit__title h2
+      font-size: 32px
+      bottom: 5px
 
 
 
