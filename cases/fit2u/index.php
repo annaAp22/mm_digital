@@ -281,10 +281,10 @@
         </div>
         <div class="unit__background">
             <div class="container ">
-                <img src="/assets/images/cases/fit2u/product.jpg"
+                <img class="unit__img1" src="/assets/images/cases/fit2u/product.jpg"
                      alt="Изображение карточки товара">
                 <div class="unit_wrap">
-                    <img src="/assets/images/cases/fit2u/plus.png" alt="Изображение ">
+                    <img class="unit__img2" src="/assets/images/cases/fit2u/plus.png" alt="Изображение ">
                     <ul class="proxima-semibold unit__lst">
                         <li><i class="trigon trigon--45">&#9650;</i>В карточке сосредоточен весь функционал выбора
                             товара. Например, “собери весь комплект”
@@ -294,18 +294,19 @@
                     </ul>
                 </div>
                 <h3 class="proxima-extrabold unit__title3">Отзывы как элемент доверия </h3>
-                <img src="/assets/images/cases/fit2u/reviews.png" alt="Изображение отзывы">
+                <img class="unit__img3"  src="/assets/images/cases/fit2u/reviews.png" alt="Изображение отзывы">
             </div>
         </div>
         <div class="unit__background-grey">
             <div class="container ">
-                <img src="/assets/images/cases/fit2u/product.jpg"
-                     alt="Изображение карточки товара">
-                <div class="unit__block">
-                    <h3 class="proxima-extrabold unit__blk-title">Интерактив для стимуляции продаж</h3>
-                    <p class="proxima-semibold ">Мы разработали виртуальный подиум для того, чтобы клиент мог выбрать подходящий комплект одежды.
-                    </p>
-                </div>
+              <div class="unit__block">
+                <h3 class="proxima-extrabold unit__blk-title">Интерактив для стимуляции продаж</h3>
+                <p class="proxima-semibold ">Мы разработали виртуальный подиум для того, чтобы клиент мог выбрать подходящий комплект одежды.
+                </p>
+              </div>
+                <img class="unit__img4" src="/assets/images/cases/fit2u/LookBook.jpg"
+                     alt="Изображение LookBook">
+
             </div>
 
         </div>

@@ -696,6 +696,104 @@
   color: #161616;
   line-height: 24px; }
 
+.unit--03 .unit__background {
+  min-height: 800px;
+  background-image: url("../images/cases/fit2u/girl-blue.png"), linear-gradient(90deg, #4e9cf4 0%, #a426e6 100%);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-color: #a426e6;
+  background-size: 27.5% auto, 100% 100%; }
+
+.unit--03 .unit__img1 {
+  width: 88.4984%;
+  margin-top: -7.98722%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.31); }
+
+.unit--03 .unit_wrap {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.unit--03 .unit__img2 {
+  width: 30.76923%;
+  margin-top: -5.43131%;
+  margin-right: 7.69231%;
+  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.46); }
+
+.unit--03 .unit__lst {
+  width: 53.84615%;
+  margin-top: 5.59105%;
+  margin-bottom: 6.94888%; }
+  .unit--03 .unit__lst li {
+    position: relative;
+    padding-left: 65px;
+    margin: 0 0 50px 0;
+    font-size: 24px;
+    color: #ffffff; }
+    .unit--03 .unit__lst li i {
+      color: #56b6f3; }
+
+.unit--03 .unit__title3 {
+  position: relative;
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 65px;
+  padding-left: 67px; }
+  .unit--03 .unit__title3:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 33px;
+    height: 5px;
+    background: #56b6f3; }
+
+.unit--03 .unit__img3 {
+  margin-left: 5.76923%;
+  margin-bottom: -15.97444%;
+  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.27); }
+
+.unit--03 .unit__background-grey {
+  background-color: #f4f4f4;
+  width: 100%; }
+
+.unit--03 .unit__block {
+  position: relative;
+  top: 400px;
+  width: 36.53846%;
+  z-index: 1;
+  padding-top: 5.59105%;
+  padding-left: 5.59105%;
+  padding-right: 2.15655%;
+  padding-bottom: 7.1885%;
+  background: #56b6f3 linear-gradient(104deg, #4e9cf4 0%, #a426e6 100%);
+  color: #ffffff;
+  box-shadow: 0px 49px 62px 0px rgba(0, 0, 0, 0.35); }
+  .unit--03 .unit__block p {
+    font-size: 18px;
+    line-height: 24px; }
+
+.unit--03 .unit__blk-title {
+  font-size: 30px;
+  border-left: 4px solid #fff;
+  padding-left: 20px;
+  margin-bottom: 40px; }
+
+.unit--03 .unit__img4 {
+  width: 76.4377%;
+  margin-right: 0;
+  margin-left: auto;
+  height: auto;
+  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.27); }
+
 @media screen and (max-width: 1317px) {
   .unit--03 .unit__title h2 {
     font-size: 60px; } }
