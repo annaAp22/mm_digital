@@ -37,6 +37,9 @@
     font-size: 16px;
     line-height: 1.2;
     font-family: "ProximaNova", sans-serif; }
+  .main-page img {
+    max-width: 100%;
+    height: auto; }
 
 .btn-fit {
   text-align: center;
@@ -186,7 +189,7 @@
 
 .unit--001 {
   position: relative;
-  background: url("../images/cases/fit2u/bg00_1.png") no-repeat;
+  background: url("../images/cases/fit2u/bg001.png") no-repeat;
   background-size: 100% 100%; }
   .unit--001 .unit__block {
     padding-right: 2.5%; }
@@ -759,39 +762,6 @@
 .unit--03 .unit__img3 {
   margin-left: 5.76923%;
   margin-bottom: -15.97444%;
-  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.27); }
-
-.unit--03 .unit__background-grey {
-  background-color: #f4f4f4;
-  width: 100%; }
-
-.unit--03 .unit__block {
-  position: relative;
-  top: 400px;
-  width: 36.53846%;
-  z-index: 1;
-  padding-top: 5.59105%;
-  padding-left: 5.59105%;
-  padding-right: 2.15655%;
-  padding-bottom: 7.1885%;
-  background: #56b6f3 linear-gradient(104deg, #4e9cf4 0%, #a426e6 100%);
-  color: #ffffff;
-  box-shadow: 0px 49px 62px 0px rgba(0, 0, 0, 0.35); }
-  .unit--03 .unit__block p {
-    font-size: 18px;
-    line-height: 24px; }
-
-.unit--03 .unit__blk-title {
-  font-size: 30px;
-  border-left: 4px solid #fff;
-  padding-left: 20px;
-  margin-bottom: 40px; }
-
-.unit--03 .unit__img4 {
-  width: 76.4377%;
-  margin-right: 0;
-  margin-left: auto;
-  height: auto;
   box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.27); }
 
 @media screen and (max-width: 1317px) {

@@ -11,7 +11,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename');
 
     gulp.task('styles', function(){
-    gulp.src(['assets/sass/index.sass','assets/sass/med_serdce.sass','assets/sass/fit2u.sass'])
+    gulp.src(['assets/sass/fit2u.sass'])
+        // gulp.src(['assets/sass/index.sass','assets/sass/med_serdce.sass','assets/sass/fit2u.sass'])
     .pipe(sass({ style: 'expanded' }))
     .pipe(autoprefixer({browsers: ['last 2 versions'],
             cascade: false}))

@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fit2U</title>
+    <title>fffffffffff</title>
     <link rel="icon" sizes="16x16" href="/assets/images/favicon.png?v=1">
     <link rel="stylesheet" href="/assets/css/med_serdce.min.css?v=20170404001">
     <link rel="stylesheet" href="/assets/css/fit2u.min.css">
-
 </head>
 <body>
 
@@ -30,8 +29,7 @@
             <i class="sprite_ms sprite_ms-phone_1"></i>
             <div class="inline-block-middle proxima">
                 +7 ( 926 ) <span class="proxima-extrabold">422 06 18</span>
-            </div>
-            <br>
+            </div><br>
             <a class="email-link proxima" href="mailto:a.ceo@mm-media.ru">a.ceo@mm-media.ru</a>
         </div>
         <div class="btn-wrap inline-block-middle">
@@ -50,33 +48,42 @@
     <ul class="navigation proxima-bold">
         <!-- <li><a href="#"><span>Кто мы</span></a></li>
         <li><a href="#"><span>Услуги</span></a></li> -->
-        <li>
-            <a href="/"><span>Главная</span></a>
-        </li>
-        <li>
-            <a href="/cases/med-serdce">><span>Мед-Сердце</span></a>
-        </li>
-        <li>
-            <a href="/cases/litstile"><span>Литстиль</span></a>
-        </li>
-        <li>
-            <a href="/cases/estetclinic"><span>Эстет Клиник</span></a>
-        </li>
-        <li>
-            <a href="/cases/beurer"><span>Beurer</span></a>
-        </li>
+        <li><a href="/"><span>Главная</span></a></li>
+        <li><a><span>Мед-Сердце</span></a></li>
+        <li><a href="/cases/litstile"><span>Литстиль</span></a></li>
+        <li><a href="/cases/estetclinic"><span>Эстет Клиник</span></a></li>
+        <li><a href="/cases/beurer"><span>Beurer</span></a></li>
         <!-- <li><a href="#contacts"><span>Контакты</span></a></li> -->
     </ul>
     <a class="close-btn" id="nav-close-btn" href="#top">&#10005;</a>
 </nav>
 <!-- Sidebar navigation End -->
-<main class="main-page" id="main">
-    <!-- Content Start -->
-    <section class="content blured" >
-        <div class="header">
-            <div class="wrapper row"></div>
+
+<!-- Content Start -->
+<section class="content blured" id="main">
+    <div class="header">
+        <div class="wrapper row">
+            <!-- <div class="column">
+                <a href="#" class="back-link vam">
+                    <i class="scale sprite_ms sprite_ms-arrow_left_1"></i>
+                    <i class="scale sprite_ms sprite_ms-arrow_left_1_active"></i>
+                    <span class="proxima-extrabold inline-block-middle">Портфолио</span>
+                </a>
+                <span class="case-name vam proxima">Интернет-магазин med-serdce.ru</span>
+            </div>
+            <div class="other-links pull-right">
+                <a href="" class="all-link">
+                    <i class="scale sprite_ms sprite_ms-zoom_1 vam"></i>
+                    <span class="proxima-bold vam">Смотреть все работы</span>
+                </a>
+                <a href="" class="presentation-link">
+                    <i class="scale sprite_ms sprite_ms-file_1 vam"></i>
+                    <span class="proxima-bold vam">Презентация по кейсу</span>
+                </a>
+            </div> -->
         </div>
-    </section>
+    </div>
+    <!-- Block 1 Start -->
     <article class="unit unit--00">
         <h2 class="visualy-hidden">Ребрендинг и новый дизайн магазина фитнес одежды</h2>
         <div class="container">
@@ -279,24 +286,7 @@
                 директорию. А это значит, что клиент с большей долей вероятности выберет нужный товар и совершит
                 покупку, не тратя время на поиск интересующей информации. Это важно.</p>
         </div>
-        <div class="unit__background">
-            <div class="container ">
-                <img class="unit__img1" src="/assets/images/cases/fit2u/product.jpg"
-                     alt="Изображение карточки товара">
-                <div class="unit_wrap">
-                    <img class="unit__img2" src="/assets/images/cases/fit2u/plus.png" alt="Изображение ">
-                    <ul class="proxima-semibold unit__lst">
-                        <li><i class="trigon trigon--45">&#9650;</i>В карточке сосредоточен весь функционал выбора
-                            товара. Например, “собери весь комплект”
-                        </li>
-                        <li><i class="trigon trigon--45">&#9650;</i>Яркие мотиваторы и триггеры к совершению покупки
-                        </li>
-                    </ul>
-                </div>
-                <h3 class="proxima-extrabold unit__title3">Отзывы как элемент доверия </h3>
-                <img class="unit__img3" src="/assets/images/cases/fit2u/reviews.png" alt="Изображение отзывы">
-            </div>
-        </div>
+
         <div class="unit__background-grey">
             <div class="container ">
                 <img class="unit__img4" src="/assets/images/cases/fit2u/LookBook.jpg"
@@ -311,19 +301,21 @@
 
         </div>
     </article>
-    <!-- Content End -->
-</main>
+    <!-- Block 16 70 Landings End -->
 
-    <div class="pop_up_bg"></div>
-    <div id="pop_up"></div>
+</section>
+<!-- Content End -->
 
-    <!-- Scripts Start -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/assets/js/modernizr-custom.js"></script>
-    <script src="/assets/js/aos/aos.js"></script>
-    <script type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIc5obn1ArfkEzXhkgZiMyyHPRQmjNx5M"></script>
-    <script src="/assets/js/app.js"></script>
-    <!-- Scripts End -->
+
+<div class="pop_up_bg"></div>
+<div id="pop_up"></div>
+
+<!-- Scripts Start -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/assets/js/modernizr-custom.js"></script>
+<script src="/assets/js/aos/aos.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIc5obn1ArfkEzXhkgZiMyyHPRQmjNx5M"></script>
+<script src="/assets/js/app.js"></script>
+<!-- Scripts End -->
 </body>
 </html>
