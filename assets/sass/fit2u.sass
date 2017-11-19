@@ -369,6 +369,8 @@ $xs: "(max-width: 575px)"
 
     .unit__block
       width: 100%
+    .unit_h3
+      margin-top: 100px
     .unit__idea
       font-size: 16px
     .palette-item
@@ -381,10 +383,13 @@ $xs: "(max-width: 575px)"
       z-index: 0
       width: 100%
   @media screen and #{$sm}
+    .unit_h3
+      margin-top: 65px
     .unit__blk-content
       max-width: 100%
       padding-left: 4%
       padding-right: 2.5%
+
 
 .unit--01
   position: relative
@@ -672,12 +677,13 @@ $xs: "(max-width: 575px)"
     box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.31)
   .unit__blk-full
     width: 100%
-    padding-top: 210/1920*100%
     text-align: center
     .container
       justify-content: center
+
     h4
       width: 100%
+      padding-top: 210/1252*100%
       font-size: 36px
       color: #482d2d
     p
@@ -685,6 +691,7 @@ $xs: "(max-width: 575px)"
       margin: 68px 0
       color: #96cc4a
       font-size: 30px
+      text-align: center
 
   .unit__form
     width: 100%
@@ -802,9 +809,8 @@ $xs: "(max-width: 575px)"
     line-height: 24px
 
   .unit__background
-    min-height: 800px
     background:
-      image: url('../images/cases/fit2u/girl-blue.png'),linear-gradient(90deg, rgb(78,156,244) 0%, rgb(164,38,230) 100%)
+      image: url('../images/cases/fit2u/girl-blue.png'),linear-gradient(-90deg, rgb(78,156,244) 0%, rgb(164,38,230) 100%)
       position: right bottom
       repeat: no-repeat
       color: #a426e6
@@ -861,38 +867,38 @@ $xs: "(max-width: 575px)"
     margin-bottom: -200/1252*100%
     box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.27)
 
-  //.unit__background-grey
-  //  background-color: #f4f4f4
-  //  width: 100%
-  //  padding-top: 255px  //262/1920*100%
-  //
-  //.unit__img4
-  //  width: 957/1252*100%
-  //  margin-right: 0
-  //  margin-left: auto
-  //  height: auto
-  //  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.27)
-  //
-  //.unit__block
-  //  //position: relative
-  //  width: 9.5/26*100%
-  //  z-index: 1
-  //  padding-top: 70/1252*100%
-  //  padding-left: 70/1252*100%
-  //  padding-right: 27/1252*100%
-  //  padding-bottom: 90/1252*100%
-  //  background: #56b6f3 linear-gradient( 104deg, rgb(78,156,244) 0%, rgb(164,38,230) 100%)
-  //  color: #ffffff
-  //  box-shadow: 0px 49px 62px 0px rgba(0, 0, 0, 0.35)
-  //  margin-top: -550/1252*100%
-  //  p
-  //    font-size: 18px
-  //    line-height: 24px
-  //.unit__blk-title
-  //  font-size: 30px
-  //  border-left: 4px solid #fff
-  //  padding-left: 20px
-  //  margin-bottom: 40px
+  .unit__background-grey
+    background-color: #f4f4f4
+    width: 100%
+    padding-top: 255px  //262/1920*100%
+
+  .unit__img4
+    width: 957/1252*100%
+    margin-right: 0
+    margin-left: auto
+    height: auto
+    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.27)
+
+  .unit__block
+    //position: relative
+    width: 9.5/26*100%
+    z-index: 1
+    padding-top: 70/1252*100%
+    padding-left: 70/1252*100%
+    padding-right: 27/1252*100%
+    padding-bottom: 90/1252*100%
+    background: #56b6f3 linear-gradient( -31deg, rgb(78,156,244) 0%, rgb(164,38,230) 100%)
+    color: #ffffff
+    box-shadow: 0px 49px 62px 0px rgba(0, 0, 0, 0.35)
+    margin-top: -550/1252*100%
+    p
+      font-size: 18px
+      line-height: 24px
+  .unit__blk-title
+    font-size: 30px
+    border-left: 4px solid #fff
+    padding-left: 20px
+    margin-bottom: 40px
 
   @media screen and #{$lg-down}
     .unit__title h2
@@ -905,9 +911,204 @@ $xs: "(max-width: 575px)"
         bottom: -7px
     .unit__descr
       width: 100%
+    .unit__background
+      background: #a426e6 linear-gradient(-90deg, rgb(78,156,244) 0%, rgb(164,38,230) 100%)
+    .unit__img3
+      margin: 0 auto
+    .unit__background-grey
+      padding-top: 60px
+    .unit__block
+      margin-top: -51%
+
 
   @media screen and #{$sm-down}
     .unit__title h2
       font-size: 32px
       bottom: 5px
+    .unit__img4
+      order: 1
+      width: 100%
+      margin: 0 auto
+      box-shadow: none
+
+    .unit__block
+      width: 100%
+      box-shadow: none
+      margin-top: 0
+
+  @media screen and #{$xs}
+    .unit__img1
+      width: 100%
+      margin-top: -100/1252*100%
+      box-shadow: none
+    .unit__img2
+      width: 75%
+      margin-top:  20px
+      margin-right: 0
+      box-shadow: none
+
+    .unit__lst
+      width: 100%
+      margin-top: 60px
+      margin-bottom: 60px
+
+.unit--04
+  .unit__background-grey
+    background-color: #f4f4f4
+    width: 100%
+
+  .container--background
+    justify-content: center
+    //margin-bottom: -80px
+    //background:
+    //  image: url('../images/cases/fit2u/bg04.jpg'),linear-gradient(-90deg, rgb(220,141,231) 0%, rgb(170,99,206) 100%)
+    //  position: 50% 0
+    //  repeat: no-repeat
+    //  color: #aa63ce
+    //  size: 100% auto ,100% 100%
+  .unit__wrap-back
+    width: 100%
+    margin-bottom: -142/1252*100%
+    display: flex
+    flex-wrap: wrap
+    flex-grow: 1
+    justify-content: center
+    align-items: flex-start
+    background:
+      image: url('../images/cases/fit2u/bg04.jpg'),linear-gradient(-90deg, rgb(220,141,231) 0%, rgb(170,99,206) 100%)
+      position: 50% 0
+      repeat: no-repeat
+      color: #aa63ce
+      size: 100% auto ,100% 100%
+  .unit__block
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    flex-grow: 1
+    align-items: flex-end
+    margin-bottom: 40px
+
+  .unit__title
+    position: relative
+    width: 16/26*100%
+    margin-top: 60px
+    margin-left: 1.5/26*100%
+    padding-right: 12px
+    color: #fff
+    &-bck
+      margin: 0
+      font-size: 159px
+      color: #9b51b3
+
+    h2
+      position: absolute
+      left: 92px
+      bottom: 19px
+      //width: 100%
+      font-size: 68px
+
+  .unit_descr
+    width: 7/26*100%
+    margin-bottom: 30px
+    color: #ffffff
+
+  .unit__img0
+    width: 1076/1252*100%
+    margin-bottom: -196/1252*100%
+    //margin-left: auto
+    //margin-right: auto
+  .unit__blk-full
+    width: 100%
+    //padding-top: 420px
+
+  .container--1828
+    //padding-top: 420px
+    @media screen and #{$xl-up}
+      max-width: 1828px
+
+  .unit__wrap-img
+    display: flex
+    flex-grow: 1
+    flex-wrap: wrap
+    align-items: flex-start
+    width: 100%
+    margin-top: 420px
+    //margin-bottom: -336/1828*100%
+    margin-bottom: -336px
+    @media screen and #{$xl-up}
+      flex-direction: column
+      height: 850px
+    @media screen and (min-width: 1740px)
+      flex-direction: column
+      height: 970px
+    @media screen and #{$lg-down}
+      flex-direction: row
+      justify-content: space-between
+      margin-top: 35%
+      margin-bottom: -10%
+
+    img
+      display: block
+      box-shadow: 8px 0px 65px 0px rgba(0, 0, 0, 0.27)
+  .unit__img1
+    width: 596/1828*100%
+  .unit__img2 ,.unit__img3 ,.unit__img4
+    width: 576/1828*100%
+
+  @media screen and #{$lg-down}
+    .unit__img1 ,.unit__img2,.unit__img3 ,.unit__img4
+      width: 47%
+      margin-bottom: 12px
+  @media screen and #{$md-down}
+    .unit__block
+      justify-content: space-between
+    .unit__title
+      width: 65%
+      margin-left: 12px
+    .unit_descr
+      width: 30%
+      padding-right: 12px
+  @media screen and #{$sm-down}
+    .unit__title
+      width: 100%
+      h2
+        font-size: 56px
+        left: 40px
+    .unit_descr
+      width: 100%
+      padding-left: 12px
+    .unit__img1 ,.unit__img2 ,.unit__img3 ,.unit__img4
+      width: 100%
+  @media screen and #{$xs}
+    img
+      box-shadow: none
+
+
+
+
+  //display: flex
+  //flex-grow: 1
+  //flex-wrap: wrap
+  //align-items: flex-start
+  //margin:
+  //  left: auto
+  //  right: auto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
