@@ -959,13 +959,7 @@ $xs: "(max-width: 575px)"
 
   .container--background
     justify-content: center
-    //margin-bottom: -80px
-    //background:
-    //  image: url('../images/cases/fit2u/bg04.jpg'),linear-gradient(-90deg, rgb(220,141,231) 0%, rgb(170,99,206) 100%)
-    //  position: 50% 0
-    //  repeat: no-repeat
-    //  color: #aa63ce
-    //  size: 100% auto ,100% 100%
+
   .unit__wrap-back
     width: 100%
     margin-bottom: -142/1252*100%
@@ -1083,8 +1077,133 @@ $xs: "(max-width: 575px)"
     img
       box-shadow: none
 
+.unit--05
+  background: #fdd92f linear-gradient(92deg, rgb(253,217,47) 0%, rgb(238,125,57) 100%)
+  padding-top: 340px
 
+  .container
+    position: relative
+    flex-direction: column
 
+  .unit__block
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    flex-grow: 1
+    margin-left: 0
+    margin-right: auto
+  .unit__title
+    position: relative
+    width: 100%
+    //margin-top: 70px
+    text-align: left
+    color: #fff
+    &-bck
+      margin: 0
+      font-size: 159px
+      color: #f39a36
+
+    h2
+      position: absolute
+      bottom: -15px
+      width: 115%
+      left: 2/13*100%
+      font-size: 68px
+      //line-height: 1.4
+
+  .unit_descr
+    margin-top: 65px
+    padding-right:  12px
+    color: #ffffff
+    line-height: 1.4
+
+  .btn-fit
+    margin-top: 58px
+
+  .container-1803
+    display: flex
+    flex-grow: 1
+    align-items: flex-start
+    max-width: 100%
+    margin:
+      left: auto
+      right: auto
+    @media screen and #{$xl-up}
+      max-width: 1803px
+  .unit__image
+    position: relative
+    width: 100%
+    padding-bottom: 675/1803*100%
+
+  .unit__img1
+    position: absolute
+    z-index: 1
+    width: 100%
+    height: auto
+    left: 0
+    bottom: -97%
+
+  @media screen and #{$md-down}
+    padding-top: 140px
+    .unit__block
+      width: 70%
+  @media screen and #{$sm-down}
+    .unit__block
+      width: 100%
+    .unit__title h2
+      width: 80%
+      font-size: 48px
+    .unit__image
+      padding-bottom: 200px
+    .unit__img1
+      position: static
+      display: none
+
+.unit--06-1
+  padding-top: 444px
+  .container
+    justify-content: center
+  .unit__title
+    position: relative
+    width: 100%
+    //margin-top: 60px
+    text-align: center
+    color: #1e1e1e
+    &-bck
+      margin: 0
+      font-size: 159px
+      color: #e3e3e3
+    h2
+      position: absolute
+      bottom: -30px
+      text-align: center
+      width: 102%
+      font-size: 68px
+
+  .unit__descr
+    width: 20/26*100%
+    margin-top: 100px
+    margin-bottom: 115px
+    //padding: 0 193px
+    font-size: 18px
+    color: #191919
+    text-align: center
+
+  @media screen and #{$lg-down}
+    padding-top: 320px
+    .unit__title h2
+      width: 100%
+      font-size: 62px
+
+  @media screen and #{$sm-down}
+    padding-top: 250px
+    .unit__title h2
+      font-size: 60px
+
+  @media screen and #{$xs}
+    padding-top: 80px
+    .unit__title h2
+      font-size: 34px
 
   //display: flex
   //flex-grow: 1

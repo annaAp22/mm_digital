@@ -329,7 +329,7 @@
           </div>
         </div>
       </div>
-<!--      <div class="unit__blk-full">-->
+      <!--      <div class="unit__blk-full">-->
       <div class="container container--1828">
         <div class="unit__wrap-img">
           <img class="unit__img1" src="/assets/images/cases/fit2u/cabinet.png"
@@ -342,35 +342,39 @@
                alt="Изображение восстановление пароля">
         </div>
       </div>
-<!--      </div>-->
+      <!--      </div>-->
+<!--05 -->
     </article>
-    <article class="unit unit--02-1">
+    <article class="unit unit--05">
       <div class="container">
-        <div class="unit__block unit__block--1">
+        <div class="unit__block ">
           <div class="unit__title">
-            <p class="unit__title-bck proxima-semibold">02</p>
-            <h2 class="proxima-extrabold">Удобная <br>интерактивная витрина </h2>
+            <p class="unit__title-bck proxima-semibold">05</p>
+            <h2 class="proxima-extrabold">Простая и понятная корзина заказов</h2>
           </div>
-          <p class="unit_descr proxima-semibold">Что должен делать хороший интернет-магазин одежды? Конечно же,
-            продавать. Мы разработали дизайн и функционал, который не отвлекает пользователя от самого главного:
-            продукта, который он хотел бы купить</p>
-
+          <p class="unit_descr proxima-semibold">Что это за магазин если Ваш клиент путается в этапах оформления заказа?
+            Мы сделали корзину такой, чтобы у клиента не осталось ни малейших сомнений в последовательности своих
+            действий. Для удобства корзина разделена на несколько простых шагов, выполнив которые клиент оформляет свой
+            заказ. </p>
+          <button class="btn btn-fit proxima-extrabold ajax-modal" data-type="request">
+            Хочу такой же продуманный сайт
+          </button>
         </div>
-        <div class="unit__block unit__block--2">
-          <h3 class="proxima-extrabold">Все под рукой!</h3>
-          <ul class="proxima-semibold unit__lst">
-            <li><i class="trigon trigon--45">&#9650;</i>Удобные фильтры подбора товара</li>
-            <li><i class="trigon trigon--90">&#9650;</i>Слева, в заметном месте дубль каталога. Это удобно. Это
-              протестированно
-            </li>
-            <li><i class="trigon trigon--45">&#9650;</i>Товары включают выбор размера без надобности перехода в
-              основную
-              карточку
-            </li>
-          </ul>
-          <img class="unit__img2" src="/assets/images/cases/fit2u/filter.png" alt="монитор">
+      </div>
+      <div class="container-1803">
+        <div class="unit__image">
+        <img class="unit__img1" src="/assets/images/cases/fit2u/bg05.png" alt="Изображение 05">
+       </div>
+      </div>
+    </article>
+<!--06 -->
+    <article class="unit unit--06-1">
+      <div class="container ">
+        <div class="unit__title">
+          <p class="unit__title-bck proxima-semibold">06</p>
+          <h2 class="proxima-extrabold">Внимание к деталям,<br>проработка информационных страниц</h2>
         </div>
-        <img class="unit__img1" src="/assets/images/cases/fit2u/DesignHere.png" alt="монитор">
+        <p class="unit__descr proxima-semibold">Мы не ставим своей целью сделать больше заказов, мы хотим делать свою работу качественно так, чтобы Вы порекомендовали нас своим знакомым и друзьям.</p>
       </div>
     </article>
     <!-- Content End -->
