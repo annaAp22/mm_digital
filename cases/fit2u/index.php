@@ -367,7 +367,7 @@
        </div>
       </div>
     </article>
-<!--06 -->
+<!--06-1 -->
     <article class="unit unit--06-1">
       <div class="container ">
         <div class="unit__title">
@@ -375,6 +375,51 @@
           <h2 class="proxima-extrabold">Внимание к деталям,<br>проработка информационных страниц</h2>
         </div>
         <p class="unit__descr proxima-semibold">Мы не ставим своей целью сделать больше заказов, мы хотим делать свою работу качественно так, чтобы Вы порекомендовали нас своим знакомым и друзьям.</p>
+      </div>
+      <div class="container-1920">
+        <picture>
+          <source media="(max-width: 700px)" srcset="/assets/images/cases/fit2u/screen-min.png">
+          <img  src="/assets/images/cases/fit2u/screen-full.jpg"  alt="Изображения страниц">
+        </picture>
+      </div>
+    </article>
+    <!--06-2 -->
+    <article class="unit unit--06-2">
+      <div class="container ">
+        <div class="unit__title">
+          <p class="unit__title-bck proxima-semibold">06</p>
+          <h2 class="proxima-extrabold">Полная адаптивность</h2>
+        </div>
+        <p class="unit__descr proxima-semibold">Сайт корректно отображается на всех устройствах, что, несомненно, положительно отражается на продажах.</p>
+
+      </div>
+      <div class="container-1550">
+      <img class="unit__img1" src="/assets/images/cases/fit2u/Mouse_plus.png" alt="Изображения устройств">
+      </div>
+      <div class="container container--center ">
+        <img class="unit__img2" src="/assets/images/cases/fit2u/Thanks.jpg" alt="Изображение Thanks">
+      </div>
+    </article>
+    <!--06-2 -->
+    <article class="unit unit--footer">
+      <div class="container ">
+        <div class="unit__block unit__block--1">
+          <img class="unit__img0" src="/assets/images/cases/fit2u/men222.png" alt="Изображение в футере">
+        </div>
+        <div class="unit__block unit__form">
+          <h2 class="proxima-extrabold unit__form-title">Получить аудит Интернет-магазина</h2>
+          <p class="proxima unit__form-txt">Введите Ваш телефон и адрес интернет-магазина, мы проведём комплексный
+            аудит и предоставим Вам простую и понятную инструкцию, с перечнем его недостатков</p>
+          <form action="/ajax/index.php" class="unit__form-form form-ajax" method="post">
+            <input type="text" name="name" placeholder="Адрес Вашего интернет-магазина" class="uv_name"
+                   required>
+            <input type="text" name="phone" placeholder="Ваш телефон" class="uv_tel" required>
+            <input type="hidden" name="action" value="send">
+            <input type="text" name="check" value="">
+            <input type="hidden" name="time" value="">
+            <button class="form_re_1 btn-fit">Заказать</button>
+          </form>
+        </div>
       </div>
     </article>
     <!-- Content End -->

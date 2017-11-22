@@ -1189,6 +1189,17 @@ $xs: "(max-width: 575px)"
     color: #191919
     text-align: center
 
+  .container-1920
+    display: flex
+    flex-grow: 1
+    align-items: flex-start
+    max-width: 100%
+    margin:
+      left: auto
+      right: auto
+    @media screen and #{$xl-up}
+      max-width: 1920px
+
   @media screen and #{$lg-down}
     padding-top: 320px
     .unit__title h2
@@ -1204,14 +1215,147 @@ $xs: "(max-width: 575px)"
     padding-top: 80px
     .unit__title h2
       font-size: 34px
+.unit--06-2
+  //padding-top: 444px
+  .unit__title
+    position: relative
+    width: 100%
+    //margin-top: 60px
+    //text-align: center
+    color: #1e1e1e
+    &-bck
+      margin: 0
+      font-size: 159px
+      color: #e3e3e3
+    h2
+      position: absolute
+      bottom: 30px
+      left: 7%
+      width: 90%
+      font-size: 68px
 
-  //display: flex
-  //flex-grow: 1
-  //flex-wrap: wrap
-  //align-items: flex-start
-  //margin:
-  //  left: auto
-  //  right: auto
+  .unit__descr
+    width: 9/26*100%
+    font-size: 16px
+    color: #1f1f1f
+    //text-align: center
+
+  .container-1550
+    display: flex
+    flex-grow: 1
+    align-items: flex-start
+    //justify-content: center
+    max-width: 100%
+    margin:
+      left: auto
+      right: auto
+      bottom: 127px
+    @media screen and #{$xl-up}
+      max-width: 1550px
+
+  .unit__img1
+    margin-top: -40px
+
+  .container--center
+    justify-content: center
+
+  @media screen and #{$lg-down}
+    .unit__descr
+      width: 50%
+  @media screen and #{$sm-down}
+    .unit__descr
+      width: 70%
+    .unit__title h2
+        font-size: 56px
+  @media screen and #{$xs}
+    .unit__descr
+      width: 100%
+    .unit__img1
+      margin-top: 0
+    .unit__title h2
+      font-size: 42px
+    .container-1550
+      margin-bottom: 40px
+
+.unit--footer
+  margin-top: 144px
+  background-color: #a1d6e2
+  .container
+    align-items: stretch
+  .unit__form
+    padding-top: 100/1252*100%
+    padding-bottom: 110/1252*100%
+    padding-right: 1/13*100%
+    &-title
+      width: 100%
+      font-size: 30px
+      color: #482d2d
+    &-txt
+      width: 100%
+      margin: 40px 0
+      color: #482d2d
+
+  .unit__form-form
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    flex-grow: 1
+    justify-content: space-between
+    align-items: flex-start
+
+    input
+      width: 612/1252*100%
+      height: 50px
+      border: 2px solid transparent
+      border-radius: 60px
+      padding: 10px 25px
+      color: #000
+      font-family: "ProximaNova", sans-serif
+      font-size: 16px
+      font-weight: 400
+      margin-bottom: 35px
+      box-shadow: 0px 6px 7px 0px rgba(109, 185, 155, 0.13)
+      outline: none
+      transition: border-color .3s ease
+      &:focus, &:active
+        border: 2px solid #96cc4a
+    .btn-fit
+      margin: 0 auto
+      width: 100%
+      height: 50px
+      padding-left: 0
+      padding-right: 0
+      font-size: 16px
+      color: #ffffff
+      background-color: #96cc4a
+      &:hover,&:focus
+        background-color: #ffffff
+        color: #96cc4a
+
+  .unit__img0
+    @media screen and (min-width: 1534px)
+      position: absolute
+      bottom: 0
+      right: 0
+      width: 767px
+      max-width: 767px
+      height: auto
+  @media screen and #{$lg-down}
+    .unit__block--1
+      align-self: flex-end
+  @media screen and #{$md-down}
+    .unit__form
+      padding-right: 12px
+    .unit__form-form
+      justify-content: center
+      input
+        width: 85%
+  @media screen and #{$sm-down}
+    .unit__block
+      width: 100%
+    .unit__block--1
+      display: none
+
 
 
 
