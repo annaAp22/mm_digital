@@ -152,8 +152,9 @@ $xs: "(max-width: 575px)"
 .unit__block
   position: relative
   width: 50%
+.wrap-moz
+    width: 100%
 
-//
 
 .unit--00
   background: url('../images/cases/fit2u/bg00.jpg') no-repeat right bottom #cc40ee
@@ -495,14 +496,7 @@ $xs: "(max-width: 575px)"
     .unit__image--1
       top: 180px
 //      02
-//
-//background: linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%),
-//background: url('../images/cases/fit2u/bg00.jpg') no-repeat right bottom ,linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%)
-//background-size: auto 100%
-//url('../images/cases/fit2u/bg00.jpg') no-repeat
-//background-image: linear-gradient( 180deg, rgb(230,78,244) 0%, rgb(164,38,230) 100%)
-//background-repeat: no-repeat
-//background-position:
+
 .unit--02-1
   background:
     image: url('../images/cases/fit2u/men.png'),linear-gradient(90deg, rgb(253, 217, 47) 0%, rgb(238, 125, 57) 100%)
@@ -514,11 +508,11 @@ $xs: "(max-width: 575px)"
     position: relative
     justify-content: space-between
 
-  .unit__block
-    display: flex
-    align-items: flex-start
-    flex-wrap: wrap
-    flex-grow: 1
+  //.unit__block
+  //  display: flex
+  //  align-items: flex-start
+  //  flex-wrap: wrap
+  //  flex-grow: 1
 
   .unit__block--1
     width:  915/1252*100%
@@ -559,8 +553,26 @@ $xs: "(max-width: 575px)"
   .unit__block--2
     width: 296/1252*100%
     color: #ffffff
-    padding-top: 190/1252*100%
-    padding-bottom: 595/1252*100%
+    //padding-top: 190/1252*100%
+    //padding-bottom: 595/1252*100%
+    .wrap-moz
+      padding-top: 190/296*100%
+      padding-bottom: 595/296*100%
+
+    //&:before
+    //  content: ''
+    //  display: block
+    //  width: 100%
+    //  padding-top: 190/296*100%
+    //  height: 0
+    //
+    //&:after
+    //  content: ''
+    //  display: block
+    //  width: 100%
+    //  padding-bottom: 595/296*100%
+    //  height: 0
+
 
   h3
     font-size: 36px
@@ -596,6 +608,8 @@ $xs: "(max-width: 575px)"
       width: 100%
       padding: 0
       order: 2
+      .wrap-moz
+        padding: 0
 
     .unit__img1
       position: static
