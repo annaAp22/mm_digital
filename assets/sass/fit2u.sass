@@ -1174,7 +1174,7 @@ $xs: "(max-width: 575px)"
 
 .unit--05
   background: #fdd92f linear-gradient(92deg, rgb(253,217,47) 0%, rgb(238,125,57) 100%)
-  padding-top: 340px
+  padding-top: 320px
 
   .container
     position: relative
@@ -1237,7 +1237,8 @@ $xs: "(max-width: 575px)"
     height: auto
     left: 0
     bottom: -97%
-
+  @media screen and #{$lg-down}
+    padding-top: 200px
   @media screen and #{$md-down}
     padding-top: 140px
     .unit__block

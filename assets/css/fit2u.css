@@ -1001,7 +1001,7 @@
 
 .unit--05 {
   background: #fdd92f linear-gradient(92deg, #fdd92f 0%, #ee7d39 100%);
-  padding-top: 340px; }
+  padding-top: 320px; }
   .unit--05 .container {
     position: relative;
     -ms-flex-direction: column;
@@ -1063,6 +1063,9 @@
     height: auto;
     left: 0;
     bottom: -97%; }
+  @media screen and (max-width: 1317px) {
+    .unit--05 {
+      padding-top: 200px; } }
   @media screen and (max-width: 1154px) {
     .unit--05 {
       padding-top: 140px; }
