@@ -855,21 +855,32 @@ $xs: "(max-width: 575px)"
       margin-right: auto
       box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.31)
 
+    .unit__img3
+      display: block
+      max-width: 966/1252*100%
+      margin-left: 1.5/26*100%
+      margin-bottom: -200/1252*100%
+      box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.27)
+
   .unit_wrap
     width: 100%
-    display: flex
-    flex-wrap: wrap
-    flex-grow: 1
-    align-items: flex-start
-  .unit__image2
-    width: 8/26*100%
+    display: block
+    //flex-wrap: wrap
+    //flex-grow: 1
+    //align-items: flex-start
+  //.unit__image2
+  //  width: 8/26*100%
   .unit__img2
+    float: left
+    display: block
+    width: 8/26*100%
     max-width: 100%
-    margin-top:  -68/385*100%
-    margin-right: 2/26*100%
+    margin-top:  -68/1252*100%
+    margin-right: 2/1252*100%
     box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.46)
 
   .unit__lst
+    float: right
     width: 14/26*100%
     margin-top: 70/1252*100%
     margin-bottom: 87/1252*100%
@@ -896,10 +907,10 @@ $xs: "(max-width: 575px)"
       height: 5px
       background: #56b6f3
 
-  .unit__img3
-    margin-left: 1.5/26*100%
-    margin-bottom: -200/1252*100%
-    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.27)
+  //.unit__img3
+  //  margin-left: 1.5/26*100%
+  //  margin-bottom: -200/1252*100%
+  //  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.27)
 
   .unit__background-grey
     background-color: #f4f4f4
@@ -917,14 +928,15 @@ $xs: "(max-width: 575px)"
     //position: relative
     width: 9.5/26*100%
     z-index: 1
-    padding-top: 70/1252*100%
-    padding-left: 70/1252*100%
-    padding-right: 27/1252*100%
-    padding-bottom: 90/1252*100%
-    background: #56b6f3 linear-gradient( -31deg, rgb(78,156,244) 0%, rgb(164,38,230) 100%)
-    color: #ffffff
-    box-shadow: 0px 49px 62px 0px rgba(0, 0, 0, 0.35)
-    margin-top: -550/1252*100%
+
+    //padding-top: 70/1252*100%
+    //padding-left: 70/1252*100%
+    //padding-right: 27/1252*100%
+    //padding-bottom: 90/1252*100%
+    //background: #56b6f3 linear-gradient( -31deg, rgb(78,156,244) 0%, rgb(164,38,230) 100%)
+    //color: #ffffff
+    //box-shadow: 0px 49px 62px 0px rgba(0, 0, 0, 0.35)
+    //margin-top: -550/1252*100%
     p
       font-size: 18px
       line-height: 24px
@@ -933,6 +945,19 @@ $xs: "(max-width: 575px)"
     border-left: 4px solid #fff
     padding-left: 20px
     margin-bottom: 40px
+
+  .wrap-moz--grey
+    width: 100%
+    padding-top: 70/461*100%
+    padding-left: 70/461*100%
+    padding-right: 27/461*100%
+    padding-bottom: 90/461*100%
+    background: #56b6f3 linear-gradient( -31deg, rgb(78,156,244) 0%, rgb(164,38,230) 100%)
+    color: #ffffff
+    box-shadow: 0px 49px 62px 0px rgba(0, 0, 0, 0.35)
+    //margin-top: -75px
+    margin-top: -550/461*100%
+
 
   @media screen and #{$lg-down}
     .unit__title h2
@@ -952,10 +977,16 @@ $xs: "(max-width: 575px)"
       background: #a426e6 linear-gradient(-90deg, rgb(78,156,244) 0%, rgb(164,38,230) 100%)
     .unit__img3
       margin: 0 auto
-    .unit__background-grey
-      padding-top: 60px
+
     .unit__block
-      margin-top: -51%
+      width: 41.5%
+    //.wrap-moz--grey
+    //  width: 100%
+    //  box-shadow: none
+    //  margin-top: 0
+
+    //.wrap-moz--grey
+    //  margin-top: -51%
 
 
   @media screen and #{$sm-down}
@@ -967,24 +998,31 @@ $xs: "(max-width: 575px)"
       width: 100%
       margin: 0 auto
       box-shadow: none
-
+    .unit__background-grey
+      padding-top: 180px
     .unit__block
+      width: 100%
+    .wrap-moz--grey
       width: 100%
       box-shadow: none
       margin-top: 0
 
   @media screen and #{$xs}
+    .unit__background-grey
+      padding-top: 80px
     .unit__img1
       width: 100%
       margin-top: -100/1252*100%
       box-shadow: none
     .unit__img2
+      float: none
       width: 75%
       margin-top:  20px
       margin-right: 0
       box-shadow: none
 
     .unit__lst
+      float: none
       width: 100%
       margin-top: 60px
       margin-bottom: 60px
@@ -999,11 +1037,12 @@ $xs: "(max-width: 575px)"
 
   .unit__wrap-back
     width: 100%
-    margin-bottom: -142/1252*100%
+    margin-bottom: -142px
+    //margin-bottom: -142/1252*100%
     display: flex
     flex-wrap: wrap
     flex-grow: 1
-    justify-content: center
+    //justify-content: center
     align-items: flex-start
     background:
       image: url('../images/cases/fit2u/bg04.jpg'),linear-gradient(-90deg, rgb(220,141,231) 0%, rgb(170,99,206) 100%)
@@ -1042,15 +1081,27 @@ $xs: "(max-width: 575px)"
     width: 7/26*100%
     margin-bottom: 30px
     color: #ffffff
-
   .unit__img0
-    width: 1076/1252*100%
-    margin-bottom: -196/1252*100%
-    //margin-left: auto
-    //margin-right: auto
-  .unit__blk-full
-    width: 100%
-    //padding-top: 420px
+    width: 886/1252*100%
+    margin-left: auto
+    margin-right: 2/26*100%
+    margin-bottom: -196px
+  //margin-bottom: -196/1252*100%
+  //margin-left: auto
+  //margin-right: auto
+  //.wrap-moz
+  //  .unit__img0
+  //    display: block
+  //    max-width: 1076/1252*100%
+  //    margin-bottom: -196/1252*100%
+  //    margin-left: auto
+  //    margin-right: auto
+
+
+
+  //.unit__blk-full
+  //  width: 100%
+  //  //padding-top: 420px
 
   .container--1828
     //padding-top: 420px
@@ -1075,8 +1126,12 @@ $xs: "(max-width: 575px)"
     @media screen and #{$lg-down}
       flex-direction: row
       justify-content: space-between
-      margin-top: 35%
-      margin-bottom: -10%
+      margin-bottom: -125px
+      //margin-top: 35%
+      //margin-bottom: -10%
+
+    @media screen and #{$md-down}
+      margin-top: 280px
 
     img
       display: block
@@ -1099,6 +1154,9 @@ $xs: "(max-width: 575px)"
     .unit_descr
       width: 30%
       padding-right: 12px
+    .unit__img0
+      margin-bottom: -96px
+
   @media screen and #{$sm-down}
     .unit__title
       width: 100%
@@ -1191,7 +1249,7 @@ $xs: "(max-width: 575px)"
       width: 80%
       font-size: 48px
     .unit__image
-      padding-bottom: 200px
+      padding-bottom: 100px
     .unit__img1
       position: static
       display: none
@@ -1320,8 +1378,8 @@ $xs: "(max-width: 575px)"
   .container
     align-items: stretch
   .unit__form
-    padding-top: 100/1252*100%
-    padding-bottom: 110/1252*100%
+    //padding-top: 100/626*100%
+    //padding-bottom: 110/626*100%
     padding-right: 1/13*100%
     &-title
       width: 100%
@@ -1331,6 +1389,10 @@ $xs: "(max-width: 575px)"
       width: 100%
       margin: 40px 0
       color: #482d2d
+    .wrap-moz
+      padding-top: 22%
+      padding-bottom: 110/626*100%
+
 
   .unit__form-form
     width: 100%
@@ -1345,10 +1407,10 @@ $xs: "(max-width: 575px)"
       height: 50px
       border: 2px solid transparent
       border-radius: 60px
-      padding: 10px 25px
+      padding: 10px 18px
       color: #000
       font-family: "ProximaNova", sans-serif
-      font-size: 16px
+      font-size: 14px
       font-weight: 400
       margin-bottom: 35px
       box-shadow: 0px 6px 7px 0px rgba(109, 185, 155, 0.13)
@@ -1380,9 +1442,11 @@ $xs: "(max-width: 575px)"
   @media screen and #{$lg-down}
     .unit__block--1
       align-self: flex-end
-  @media screen and #{$md-down}
     .unit__form
       padding-right: 12px
+  @media screen and #{$md-down}
+    //.unit__form
+    //  padding-right: 12px
     .unit__form-form
       justify-content: center
       input
