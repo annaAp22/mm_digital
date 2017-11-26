@@ -197,7 +197,7 @@
         <p class="unit_descr proxima-semibold">Что должен делать хороший интернет-магазин одежды? Конечно же,
           продавать. Мы разработали дизайн и функционал, который не отвлекает пользователя от самого главного:
           продукта, который он хотел бы купить</p>
-
+        <img class="unit__img1" src="/assets/images/cases/fit2u/DesignHere.png" alt="монитор">
       </div>
       <div class="unit__block unit__block--2">
         <div class="wrap-moz">
@@ -214,25 +214,26 @@
               карточку
             </li>
           </ul>
-                    <img class="unit__img2" src="/assets/images/cases/fit2u/filter.png" alt="монитор">
+          <img class="unit__img2" src="/assets/images/cases/fit2u/filter.png" alt="монитор">
         </div>
       </div>
-      <!--        <img class="unit__img1" src="/assets/images/cases/fit2u/DesignHere.png" alt="монитор">-->
-
     </div>
   </article>
   <article class="unit unit--02-2">
     <div class="unit__background">
       <div class="container">
         <div class="unit__block unit__block--1">
+          <div class="wrap-moz">
           <h3 class="proxima-extrabold">Расширенный функционал, широкие возможности</h3>
           <p class="proxima-semibold unit__descr">Возможность переключаться между видом листинга. Кто-то любит
             минималистичное
             представление товаров, а кто-то хочет видеть сразу основную информацию и функционал</p>
           <img class="unit__img1" src="/assets/images/cases/fit2u/functional.jpg"
                alt="Изображение функционал">
+          </div>
         </div>
         <div class="unit__block unit__block--2">
+          <div class="wrap-moz">
           <ul class="proxima-extrabold unit__lst">
             <li><i class="trigon trigon--45">&#9650;</i>Сортировка товаров по цене, популярности, новинкам,
               акциям
@@ -245,14 +246,17 @@
             <li><i class="trigon ">&#9650;</i>Заметная кнопка “В корзину”</li>
           </ul>
           <img class="unit__img2" src="/assets/images/cases/fit2u/catalog2.jpg" alt="Изображение каталог">
+          </div>
         </div>
       </div>
     </div>
     <div class="unit__blk-full">
       <div class="container">
+        <div class="wrap-moz">
         <h4 class="proxima-extrabold">По статистике 60% посетителей уходят с сайта спустя 15 секунд из-за
           неудобства и запутанности его архитектуры </h4>
         <p class="proxima-semibold">Хватит терять клиентов! Доверьте разработку Вашего сайта нам</p>
+        </div>
       </div>
     </div>
     <section class="unit__form">
@@ -279,17 +283,23 @@
         <p class="unit__title-bck proxima-semibold">03</p>
         <h2 class="proxima-extrabold">Информативная карточка товара </h2>
       </div>
-      <p class="unit__descr proxima-semibold">Проработанная карточка товара, позволяющая узнать все самые важные
+      <div class="unit__descr">
+      <p class="unit__txt proxima-semibold">Проработанная карточка товара, позволяющая узнать все самые важные
         характеристики одежды, а также информацию по доставке, оплате и условиям покупки, не покидая текущую
         директорию. А это значит, что клиент с большей долей вероятности выберет нужный товар и совершит
         покупку, не тратя время на поиск интересующей информации. Это важно.</p>
+      </div>
     </div>
     <div class="unit__background">
       <div class="container ">
+        <div class="wrap-moz">
         <img class="unit__img1" src="/assets/images/cases/fit2u/product.jpg"
              alt="Изображение карточки товара">
-        <div class="unit_wrap">
-          <img class="unit__img2" src="/assets/images/cases/fit2u/plus.png" alt="Изображение ">
+        </div>
+        <div class="unit_wrap ">
+          <div class="unit__image2">
+            <img class="unit__img2" src="/assets/images/cases/fit2u/plus.png" alt="Изображение ">
+          </div>
           <ul class="proxima-semibold unit__lst">
             <li><i class="trigon trigon--45">&#9650;</i>В карточке сосредоточен весь функционал выбора
               товара. Например, “собери весь комплект”

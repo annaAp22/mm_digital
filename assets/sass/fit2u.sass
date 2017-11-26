@@ -105,7 +105,12 @@ $xs: "(max-width: 575px)"
   img
     max-width: 100%
     height: auto
-//overflow: hidden
+
+  .clearfix:after
+    content: ""
+    display: table
+    clear: both
+
 
 .btn-fit
   text-align: center
@@ -505,8 +510,8 @@ $xs: "(max-width: 575px)"
     color: #fdd92f
     size: 41% auto ,100% 100%
   .container
-    position: relative
     justify-content: space-between
+    align-items: stretch
 
   //.unit__block
   //  display: flex
@@ -545,10 +550,10 @@ $xs: "(max-width: 575px)"
   .unit__img1
     position: absolute
     z-index: 1
-    width: 888/1252*100%
+    width: 888/915*100%
     height: auto
     left: 0
-    bottom: -85/1252*100%
+    bottom: -85/915*100%
 
   .unit__block--2
     width: 296/1252*100%
@@ -607,17 +612,17 @@ $xs: "(max-width: 575px)"
     .unit__block--2
       width: 100%
       padding: 0
-      order: 2
+
       .wrap-moz
         padding: 0
 
     .unit__img1
       position: static
-      width: 888/1252*100%
-      height: auto
-      left: 0
-      bottom: -85/1252*100%
-      order: 1
+      //width: 888/915*100%
+      //height: auto
+      //left: 0
+      //bottom: -85/915*100%
+
     .unit__title h2
       font-size: 37px
     .unit__img2
@@ -625,33 +630,37 @@ $xs: "(max-width: 575px)"
 
 .unit--02-2
   .unit__background
+    width: 100%
     background:
       image: url('../images/cases/fit2u/bg02.jpg'),linear-gradient(90deg, #f9f9f9 52.5%, #35b056 52.5%)
       repeat: no-repeat, no-repeat
       position: right top,0 0
-      color: #35b056
-      size: contain ,100% 100%
-        //size: 47.5% 100% ,100% 100%
+      //color: #35b056
+      size: 47.5% 100% ,100% 100%
+      //size: 47.5% 100% ,100% 100%
     //background: url('../images/cases/fit2u/123.jpg') no-repeat right bottom #cc40ee
     //background-size: auto 100%
   .unit__block
-    display: flex
-    align-items: flex-start
-    flex-wrap: wrap
-    flex-grow: 1
+    //display: flex
+    //align-items: flex-start
+    //flex-wrap: wrap
+    //flex-grow: 1
     &--1
       width: 53.8%
-      align-self: stretch
+      //align-self: stretch
       background-color: #f6f6f6
-      padding-top: 124/1252*100%
+      .wrap-moz
+        padding-top: 124/674*100%
+
       h3
         font-size: 42px
         padding-right: 48/674*100%
     &--2
       position: relative
       width: 46.2%
-      padding-top: 256/1252*100%
-      padding-bottom: 350/1252*100%
+      .wrap-moz
+        padding-top: 256/578*100%
+        padding-bottom: 350/578*100%
 
 
   .unit__descr
@@ -663,6 +672,7 @@ $xs: "(max-width: 575px)"
     font-size: 16px
     line-height: 24px
   .unit__img1
+    position: relative
     max-width: 100%
     height: auto
     box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.31)
@@ -671,8 +681,9 @@ $xs: "(max-width: 575px)"
   .unit__lst
     width: 100%
     padding: 0
+    padding-left: 96/578*100%
     margin: 0
-    margin-left: 96/578*100%
+
     li
       position: relative
       padding-left: 38px
@@ -684,11 +695,12 @@ $xs: "(max-width: 575px)"
 
   .unit__img2
     position: absolute
-    width: 680/578*100%
+    max-width: 680/578*100%
     height: auto
     right: 0
     bottom: -12.5%
     box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.31)
+
   .unit__blk-full
     width: 100%
     text-align: center
@@ -702,7 +714,7 @@ $xs: "(max-width: 575px)"
       color: #482d2d
     p
       width: 685/1252*100%
-      margin: 68px 0
+      margin: 68px auto
       color: #96cc4a
       font-size: 30px
       text-align: center
@@ -777,9 +789,12 @@ $xs: "(max-width: 575px)"
     .unit__block--2
       width: 100%
       background: #35b056
+      .wrap-moz
+        padding-top: 40px
+        padding-bottom: 40px
 
     .unit__lst
-      margin-left: 12px
+      padding-left: 12px
     .unit__img2
       position: static
       max-width: 100%
@@ -814,10 +829,12 @@ $xs: "(max-width: 575px)"
 
   .unit__descr
     width: 11/26*100%
-    margin-top: 162/1252*100%
-    margin-bottom: 215/1252*100%
     margin-right: 0
     margin-left: auto
+
+  .unit__txt
+    margin-top: 162/530*100%
+    margin-bottom: 215/530*100%
     padding-right: 10px
     color: #161616
     line-height: 24px
@@ -829,12 +846,14 @@ $xs: "(max-width: 575px)"
       repeat: no-repeat
       color: #a426e6
       size: 11/40*100% auto ,100% 100%
-  .unit__img1
-    width: 1108/1252*100%
-    margin-top: -100/1252*100%
-    margin-left: auto
-    margin-right: auto
-    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.31)
+  .wrap-moz
+    .unit__img1
+      display: block
+      max-width: 1108/1252*100%
+      margin-top: -100/1252*100%
+      margin-left: auto
+      margin-right: auto
+      box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.31)
 
   .unit_wrap
     width: 100%
@@ -842,10 +861,11 @@ $xs: "(max-width: 575px)"
     flex-wrap: wrap
     flex-grow: 1
     align-items: flex-start
-
-  .unit__img2
+  .unit__image2
     width: 8/26*100%
-    margin-top:  -68/1252*100%
+  .unit__img2
+    max-width: 100%
+    margin-top:  -68/385*100%
     margin-right: 2/26*100%
     box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.46)
 
@@ -925,6 +945,9 @@ $xs: "(max-width: 575px)"
         bottom: -7px
     .unit__descr
       width: 100%
+    .unit__txt
+      margin-top: 40px
+      margin-bottom: 100px
     .unit__background
       background: #a426e6 linear-gradient(-90deg, rgb(78,156,244) 0%, rgb(164,38,230) 100%)
     .unit__img3
