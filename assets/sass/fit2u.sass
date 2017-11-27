@@ -169,6 +169,8 @@ $xs: "(max-width: 575px)"
     position: absolute
     z-index: 1
     display: block
+    max-width: 894/626*100%
+    height: auto
     top: 0
     right: 7%
 
@@ -238,19 +240,19 @@ $xs: "(max-width: 575px)"
       position: relative
       padding-left: 42px
       margin: 0 0 22px 0
-  //@media screen and #{$lg-down}
-  //  .unit__img00
-  //    position: static
-  //    max-width: 100%
-  //    height: auto
-  @media screen and #{$md-down}
-    background: #cc40ee linear-gradient(180deg, rgb(230, 78, 244) 0%, rgb(164, 38, 230) 100%)
-    .unit__block--1
-      width: 100%
+  @media screen and #{$lg-down}
     .unit__img00
       position: static
       max-width: 100%
       height: auto
+  @media screen and #{$md-down}
+    background: #cc40ee linear-gradient(180deg, rgb(230, 78, 244) 0%, rgb(164, 38, 230) 100%)
+    .unit__block--1
+      width: 100%
+    //.unit__img00
+    //  position: static
+    //  max-width: 100%
+    //  height: auto
     //display: none
     .unit__block--2
       width: 100%
@@ -871,6 +873,8 @@ $xs: "(max-width: 575px)"
   //.unit__image2
   //  width: 8/26*100%
   .unit__img2
+    position: relative
+    z-index: 1
     float: left
     display: block
     width: 8/26*100%
@@ -1104,8 +1108,10 @@ $xs: "(max-width: 575px)"
   //  //padding-top: 420px
 
   .container--1828
-    //padding-top: 420px
+
     @media screen and #{$xl-up}
+      max-width: 100%
+    @media screen and (min-width: 1828px)
       max-width: 1828px
 
   .unit__wrap-img
@@ -1119,10 +1125,10 @@ $xs: "(max-width: 575px)"
     margin-bottom: -336px
     @media screen and #{$xl-up}
       flex-direction: column
-      height: 850px
+      height: 950px
     @media screen and (min-width: 1740px)
       flex-direction: column
-      height: 970px
+      height: 990px
     @media screen and #{$lg-down}
       flex-direction: row
       justify-content: space-between
@@ -1140,6 +1146,9 @@ $xs: "(max-width: 575px)"
     width: 596/1828*100%
   .unit__img2 ,.unit__img3 ,.unit__img4
     width: 576/1828*100%
+
+  .unit__img2 ,.unit__img3
+    margin-bottom: 35px
 
   @media screen and #{$lg-down}
     .unit__img1 ,.unit__img2,.unit__img3 ,.unit__img4
@@ -1293,8 +1302,14 @@ $xs: "(max-width: 575px)"
     margin:
       left: auto
       right: auto
+
     @media screen and #{$xl-up}
+      max-width: 100%
+    @media screen and (min-width: 1920px)
       max-width: 1920px
+  .unit__img1
+    display: block
+    width: 100%
 
   @media screen and #{$lg-down}
     padding-top: 320px
@@ -1346,11 +1361,17 @@ $xs: "(max-width: 575px)"
       left: auto
       right: auto
       bottom: 127px
+
     @media screen and #{$xl-up}
+      max-width: 100%
+    @media screen and (min-width: 1550px)
       max-width: 1550px
 
   .unit__img1
     margin-top: -40px
+  .unit__img1,.unit__img2
+    display: block
+    width: 100%
 
   .container--center
     justify-content: center

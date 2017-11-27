@@ -404,7 +404,7 @@
       <div class="container-1920">
         <picture>
           <source media="(max-width: 700px)" srcset="/assets/images/cases/fit2u/screen-min.png">
-          <img src="/assets/images/cases/fit2u/screen-full.jpg" alt="Изображения страниц">
+          <img class="unit__img1" src="/assets/images/cases/fit2u/screen-full.jpg" alt="Изображения страниц">
         </picture>
       </div>
     </article>
