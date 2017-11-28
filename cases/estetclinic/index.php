@@ -55,6 +55,7 @@
         <li><a href="/cases/litstile"><span>Литстиль</span></a></li>
         <li><a ><span>Эстет Клиник</span></a></li>
         <li><a href="/cases/beurer"><span>Beurer</span></a></li>
+        <li><a href="/cases/fit2u"><span>Fit2U</span></a></li>
         <!-- <li><a href="#contacts"><span>Контакты</span></a></li> -->
     </ul>
     <a class="close-btn" id="nav-close-btn" href="#top">&#10005;</a>

@@ -54,7 +54,7 @@
         <a href="/"><span>Главная</span></a>
       </li>
       <li>
-        <a href="/cases/med-serdce">><span>Мед-Сердце</span></a>
+        <a href="/cases/med-serdce"><span>Мед-Сердце</span></a>
       </li>
       <li>
         <a href="/cases/litstile"><span>Литстиль</span></a>
@@ -65,6 +65,7 @@
       <li>
         <a href="/cases/beurer"><span>Beurer</span></a>
       </li>
+      <li><a ><span>Fit2U</span></a></li>
       <!-- <li><a href="#contacts"><span>Контакты</span></a></li> -->
     </ul>
     <a class="close-btn" id="nav-close-btn" href="#top">&#10005;</a>
@@ -348,7 +349,6 @@
           </div>
         </div>
       </div>
-      <!--      <div class="unit__blk-full">-->
       <div class="container container--1828">
         <div class="unit__wrap-img">
           <img class="unit__img1" src="/assets/images/cases/fit2u/cabinet.png"
@@ -361,7 +361,6 @@
                alt="Изображение восстановление пароля">
         </div>
       </div>
-      <!--      </div>-->
       <!--05 -->
     </article>
     <article class="unit unit--05">

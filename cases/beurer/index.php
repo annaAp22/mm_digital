@@ -53,6 +53,7 @@
         <li><a href="/cases/med-serdce"><span>Мед-Сердце</span></a></li>
         <li><a href="/cases/litstile"><span>Литстиль</span></a></li>
         <li><a href="/cases/estetclinic"><span>Эстет Клиник</span></a></li>
+        <li><a href="/cases/fit2u"><span>Fit2U</span></a></li>
         <li><a ><span>Beurer</span></a></li>
         <!-- <li><a href="#contacts"><span>Контакты</span></a></li> -->
     </ul>

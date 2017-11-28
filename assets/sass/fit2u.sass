@@ -1,54 +1,6 @@
 // 10px
 $baseFontSize: 62.5%
-//
-//=media-xl($direction: only)
-//  @if ($direction == up or $direction == only)
-//    @media screen and (min-width: $xl)
-//      @content
-//  @else if ($direction == down)
-//    @media screen and (max-width: $xl - 1)
-//      @content
-//
-//=media-lg($direction: only)
-//  @if ($direction == only)
-//    @media screen and (min-width: $lg) and (max-width: $xl - 1)
-//      @content
-//  @else if ($direction == up)
-//    @media screen and (min-width: $lg)
-//      @content
-//  @else if ($direction == down)
-//    @media screen and (max-width: $xl - 1)
-//      @content
-//
-//=media-md($direction: only)
-//  @if ($direction == only)
-//    @media screen and (min-width: $md) and (max-width: $lg - 1)
-//      @content
-//  @else if ($direction == up)
-//    @media screen and (min-width: $md)
-//      @content
-//  @else if ($direction == down)
-//    @media screen and (max-width: $lg - 1)
-//      @content
-//
-//=media-sm($direction: only)
-//  @if ($direction == only)
-//    @media screen and (min-width: $sm) and (max-width: $md - 1)
-//      @content
-//  @else if ($direction == up)
-//    @media screen and (min-width: $sm)
-//      @content
-//  @else if ($direction == down)
-//    @media screen and (max-width: $md - 1)
-//      @content
-//
-//=media-xs($direction: only)
-//  @if ($direction == up)
-//    @media screen and (min-width: $xs)
-//      @content
-//  @else if ($direction == down or $direction == only)
-//    @media screen and (max-width: $xs - 1)
-//      @content
+
 $xl-up: "(min-width: 1318px)"
 $xl: "(max-width: 1318px)"
 $lg-down: "(max-width: 1317px)"
@@ -64,8 +16,6 @@ $sm-up: "(min-width: 576px)"
 $sm: "(max-width: 576px)"
 
 $xs: "(max-width: 575px)"
-
-
 
 .container
   display: flex
@@ -133,8 +83,6 @@ $xs: "(max-width: 575px)"
     background-color: #f3f3f3
     cursor: pointer
 
-//@include em-fallback('padding', 0, 3)
-//@include em-fallback('height', 3)
 
 .trigon
   position: absolute
@@ -142,8 +90,7 @@ $xs: "(max-width: 575px)"
   left: 0
   display: block
   color: #d898aa
-  //border: 14px solid transparent
-  //border-bottom: 23px solid #d898aa
+
   &--90
     transform: rotate(90deg)
   &--45
@@ -515,11 +462,7 @@ $xs: "(max-width: 575px)"
     justify-content: space-between
     align-items: stretch
 
-  //.unit__block
-  //  display: flex
-  //  align-items: flex-start
-  //  flex-wrap: wrap
-  //  flex-grow: 1
+
 
   .unit__block--1
     width:  915/1252*100%
@@ -566,21 +509,6 @@ $xs: "(max-width: 575px)"
       padding-top: 190/296*100%
       padding-bottom: 595/296*100%
 
-    //&:before
-    //  content: ''
-    //  display: block
-    //  width: 100%
-    //  padding-top: 190/296*100%
-    //  height: 0
-    //
-    //&:after
-    //  content: ''
-    //  display: block
-    //  width: 100%
-    //  padding-bottom: 595/296*100%
-    //  height: 0
-
-
   h3
     font-size: 36px
     //margin-top: 190px
@@ -620,10 +548,7 @@ $xs: "(max-width: 575px)"
 
     .unit__img1
       position: static
-      //width: 888/915*100%
-      //height: auto
-      //left: 0
-      //bottom: -85/915*100%
+
 
     .unit__title h2
       font-size: 37px
@@ -637,16 +562,10 @@ $xs: "(max-width: 575px)"
       image: url('../images/cases/fit2u/bg02.jpg'),linear-gradient(90deg, #f9f9f9 52.5%, #35b056 52.5%)
       repeat: no-repeat, no-repeat
       position: right top,0 0
-      //color: #35b056
       size: 47.5% 100% ,100% 100%
-      //size: 47.5% 100% ,100% 100%
-    //background: url('../images/cases/fit2u/123.jpg') no-repeat right bottom #cc40ee
+          //background: url('../images/cases/fit2u/123.jpg') no-repeat right bottom #cc40ee
     //background-size: auto 100%
   .unit__block
-    //display: flex
-    //align-items: flex-start
-    //flex-wrap: wrap
-    //flex-grow: 1
     &--1
       width: 53.8%
       //align-self: stretch
@@ -911,10 +830,6 @@ $xs: "(max-width: 575px)"
       height: 5px
       background: #56b6f3
 
-  //.unit__img3
-  //  margin-left: 1.5/26*100%
-  //  margin-bottom: -200/1252*100%
-  //  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.27)
 
   .unit__background-grey
     background-color: #f4f4f4
@@ -933,14 +848,6 @@ $xs: "(max-width: 575px)"
     width: 9.5/26*100%
     z-index: 1
 
-    //padding-top: 70/1252*100%
-    //padding-left: 70/1252*100%
-    //padding-right: 27/1252*100%
-    //padding-bottom: 90/1252*100%
-    //background: #56b6f3 linear-gradient( -31deg, rgb(78,156,244) 0%, rgb(164,38,230) 100%)
-    //color: #ffffff
-    //box-shadow: 0px 49px 62px 0px rgba(0, 0, 0, 0.35)
-    //margin-top: -550/1252*100%
     p
       font-size: 18px
       line-height: 24px
@@ -959,7 +866,6 @@ $xs: "(max-width: 575px)"
     background: #56b6f3 linear-gradient( -31deg, rgb(78,156,244) 0%, rgb(164,38,230) 100%)
     color: #ffffff
     box-shadow: 0px 49px 62px 0px rgba(0, 0, 0, 0.35)
-    //margin-top: -75px
     margin-top: -550/461*100%
 
 
@@ -984,14 +890,6 @@ $xs: "(max-width: 575px)"
 
     .unit__block
       width: 41.5%
-    //.wrap-moz--grey
-    //  width: 100%
-    //  box-shadow: none
-    //  margin-top: 0
-
-    //.wrap-moz--grey
-    //  margin-top: -51%
-
 
   @media screen and #{$sm-down}
     .unit__title h2
@@ -1090,22 +988,6 @@ $xs: "(max-width: 575px)"
     margin-left: auto
     margin-right: 2/26*100%
     margin-bottom: -196px
-  //margin-bottom: -196/1252*100%
-  //margin-left: auto
-  //margin-right: auto
-  //.wrap-moz
-  //  .unit__img0
-  //    display: block
-  //    max-width: 1076/1252*100%
-  //    margin-bottom: -196/1252*100%
-  //    margin-left: auto
-  //    margin-right: auto
-
-
-
-  //.unit__blk-full
-  //  width: 100%
-  //  //padding-top: 420px
 
   .container--1828
 
@@ -1199,7 +1081,6 @@ $xs: "(max-width: 575px)"
   .unit__title
     position: relative
     width: 100%
-    //margin-top: 70px
     text-align: left
     color: #fff
     &-bck
@@ -1271,7 +1152,6 @@ $xs: "(max-width: 575px)"
   .unit__title
     position: relative
     width: 100%
-    //margin-top: 60px
     text-align: center
     color: #1e1e1e
     &-bck
@@ -1289,7 +1169,6 @@ $xs: "(max-width: 575px)"
     width: 20/26*100%
     margin-top: 100px
     margin-bottom: 115px
-    //padding: 0 193px
     font-size: 18px
     color: #191919
     text-align: center
@@ -1331,8 +1210,6 @@ $xs: "(max-width: 575px)"
   .unit__title
     position: relative
     width: 100%
-    //margin-top: 60px
-    //text-align: center
     color: #1e1e1e
     &-bck
       margin: 0
@@ -1478,23 +1355,3 @@ $xs: "(max-width: 575px)"
       width: 100%
     .unit__block--1
       display: none
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
